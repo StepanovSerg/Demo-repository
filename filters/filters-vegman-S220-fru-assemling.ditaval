@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+    <prop action="exclude" att="product" val="vegman-s320"/>
+    <prop action="exclude" att="product" val="vegman-r120-g1"/>
+    <prop action="exclude" att="product" val="vegman-r220-g2"/>
+    <prop action="exclude" att="product" val="vegman-r"/>
+    <prop action="exclude" att="props" val="prop1"/>
+    <prop action="exclude" att="props" val="not-ready"/>
+    <prop action="exclude" att="props" val="vegman-n110"/>
+    <prop action="exclude" att="props" val="vegman-s-mb"></prop>
+    
+    <prop action="include" att="product" val="220-320"/>
+    <prop action="include" att="product" val="vegman-s220"/>
+</val>

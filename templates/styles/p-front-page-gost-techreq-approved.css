@@ -1,0 +1,88 @@
+/*
+ * =====================================================
+ * 
+ * Defines the front page aspect.
+ * 
+ * It matches the XSL created <front-page/> element.
+ * 
+ * =====================================================
+ */
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+*[class~="front-page/front-page-title"]:before(6) {
+	font-family: "GOST Type A";
+    text-align: left;
+    content: "";
+	font-weight:normal;
+    display:block;
+	margin-top:2cm;
+    content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]") !important;
+}
+
+*[class~="front-page/front-page-title"]:before(5) {
+    content: "УТВЕРЖДАЮ\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(4) {
+    content: oxy_xpath("(//*[contains(@class, 'xnal-d/generationidentifier')]/text())[1]")"\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(3) {
+    content: oxy_xpath("(//*[contains(@class, 'xnal-d/otherinfo')]/text())[1]") !important;
+}
+
+*[class~="front-page/front-page-title"]:before(2) {
+    content: oxy_xpath("(//*[contains(@class, 'xnal-d/firstname')]/text())[1]") !important;
+}
+
+*[class~="front-page/front-page-title"]:before(1) {
+    content: "_____________________" !important;
+}
+
+*[class~="bookmap/booktitle"]:after(3) {
+    content: "СОГЛАСОВАНО ЗАКАЗЧИКОМ\A" !important;
+}
+
+*[class~="bookmap/booktitle"]:after(5) {
+    content: oxy_xpath("(//*[contains(@class, 'xnal-d/generationidentifier')]/text())[2]")"\A" !important;
+}
+
+*[class~="bookmap/booktitle"]:after(6) {
+    content: oxy_xpath("(//*[contains(@class, 'xnal-d/otherinfo')]/text())[2]") !important;
+}
+
+*[class~="bookmap/booktitle"]:after(7) {
+    content: oxy_xpath("(//*[contains(@class, 'xnal-d/firstname')]/text())[2]") !important;
+}
+
+*[class~="bookmap/booktitle"]:after(8) {
+    content: "_____________________" !important;
+}
+
+*[class ~= "bookmap/booktitle"]:after(12) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: "";
+	font-weight: bold;
+	font-size: 14pt;
+	margin-top: 2cm;
+}
+
+*[class ~= "bookmap/booktitle"]:after(12) {
+    content: "Дата введения: " oxy_xpath("//*[contains(@class, 'bookmap/day')]/text()") "." oxy_xpath("//*[contains(@class, 'bookmap/month')]/text()") "." oxy_xpath("//*[contains(@class, 'bookmap/year')]/text()") '\A' !important;
+}
+
+*[class ~= "bookmap/booktitle"]:after(13) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: "";
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+*[class ~= "bookmap/booktitle"]:after(13) {
+    content: "Без ограничения срока действия" !important;
+}

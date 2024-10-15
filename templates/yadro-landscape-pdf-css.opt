@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<publishing-template>
+    <name>yadro-pdf-css</name>
+    <description></description>
+    <pdf>
+        <tags>
+            <tag type="layout">tiles</tag>
+            <tag type="color">dark</tag>
+        </tags>
+		<preview-image file="images/yadro-landscape-pdf.png"/>
+		<parameters>
+            <parameter name="args.css" value="styles/_custom-landscape.css" type="filePath"/>
+            <parameter name="args.css.param.numbering" value="shallow"/>
+            <parameter name="args.debug" value="yes"/>
+            <parameter name="args.figurelink.style" value="NUMBER"/>
+            <parameter name="args.tablelink.style" value="NUMBER"/>
+            <parameter name="figure.title.placement" value="bottom"/>
+        </parameters>
+        <resources>
+            <css file="styles/_custom-landscape.css"/>
+			<css file="styles/p-front-page-landscape.css"/>
+			<css file="styles/p-pages-and-headers-landscape.css"/>
+			<css file="styles/p-images-landscape.css"/>
+			<css file="styles/p-styling-landscape.css"/>
+		</resources>
+    </pdf>
+</publishing-template>

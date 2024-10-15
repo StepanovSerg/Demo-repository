@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+    <prop action="include" att="deliveryTarget" val="themisto"/>
+  	
+    <prop action="exclude" att="deliveryTarget" val="callisto"/>
+    <prop action="exclude" att="deliveryTarget" val="cruithne"/>
+    <prop action="exclude" att="deliveryTarget" val="duende"/>
+    <prop action="exclude" att="deliveryTarget" val="moon"/>
+    <prop action="exclude" att="deliveryTarget" val="amalthea"/>
+    <prop action="exclude" att="deliveryTarget" val="ganymede"/>
+    <prop action="exclude" att="deliveryTarget" val="io"/>
+    <prop action="exclude" att="deliveryTarget" val="titan"/>
+    <prop action="exclude" att="deliveryTarget" val="mimas"/>
+    <prop action="exclude" att="deliveryTarget" val="dione"/>
+    
+  </val>

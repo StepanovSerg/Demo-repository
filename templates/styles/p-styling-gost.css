@@ -1,0 +1,433 @@
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+/* Introduction specific styles */
+
+*[class~="bookmap/preface"] {
+	bookmark-label: none !important;
+	-ah-bookmark-label: none !important;
+}
+
+/* Codeblock-related styles.*/
+
+*[class~="pr-d/codeblock"] {
+   font-size: 75% !important;
+   margin-top: 5px !important;
+   margin-bottom: 5px !important;
+}
+
+*[expanse='page'] {
+    width: 6.5in; /* Here should be the size of the page without margins. */
+}
+
+*[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -2em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -4em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -6em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -8em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -10em;    
+}
+
+/* CLI commands */
+*[class~="sw-d/cmdname"] {
+	font-family: FuturaPT !important;
+	font-weight: bold !important;
+	font-size: 1em !important;
+}
+
+/* Common paragraph style*/
+
+p {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  text-indent: 1cm;
+  font-size: 14pt;
+}
+
+*[class~="topic/entry"] > *[class~="topic/p"] {
+  text-indent: 0 !important;
+}
+
+*[class~="- topic/topic topic nested0 page-break-after"] {
+  margin-top: 0px !important;
+}
+
+*[class~="topic/data"][outputclass~="visible-data"] {
+  display: inline !important;
+}
+
+*[outputclass="two-columns"] > *[outputclass="column1"] {
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+  padding-bottom: 5px !important;
+  text-indent: 1cm;
+  font-size: 14pt;
+  vertical-align:top;
+  display:inline-block;
+  width: 50%;	
+}
+
+*[outputclass="two-columns"] > *[outputclass="column2"] {
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+  padding-bottom: 5px !important;
+  font-size: 14pt;
+  vertical-align:top;
+  display:inline-block;
+  width: 45%;
+  text-align: left;
+}
+
+/* Table-related styles */
+
+*[class ~= "topic/thead"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"] {
+    text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-1num"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(1) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-1num"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(2) {
+	text-align: left !important;
+}
+
+*[class~='topic/table'][outputclass="table-1num"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(3) {
+	text-align: left !important;
+}
+
+*[class~='topic/table'][outputclass="table-1num"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(4) {
+	text-align: left !important;
+}
+
+*[class~='topic/table'][outputclass="table-1text"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(1) {
+	text-align: left !important;
+}
+
+*[class~='topic/table'][outputclass="table-1text"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(2) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-1text"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(3) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-1text"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(4) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-allnum"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(1) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-allnum"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(2) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-allnum"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(3) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'][outputclass="table-allnum"] > *[class~="topic/tbody"] > *[class ~= "topic/row"] > *[class ~= "topic/entry"]:nth-child(4) {
+	text-align: center !important;
+}
+
+*[class~='topic/table'] > *[class~='topic/title'] {
+  text-align: center;
+}
+
+*[class ~= "topic/table"] > caption:before{
+  display: inline;
+  font-size: 14pt;
+  text-align: center !important;
+  content: "Таблица " counter(tablecount) " - " !important;
+}
+
+*[class ~= "topic/table"][outputclass="appendix-title-table"] > caption:before{
+  display: none !important;
+}
+
+*[class ~= "table--title-label"] {
+	display: none !important;
+}
+
+*[class~="topic/entry"] {
+  font-size: 14pt;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  page-break-inside: avoid !important;
+  hyphens: none !important;
+}
+
+*[class~="topic/tbody"] > *[class~="topic/row"] > *[class~="topic/entry"] {
+  hyphens: auto !important;
+}
+
+table > caption {
+  font-size: 14pt;
+  font-weight: normal;
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+  text-align: center;
+}   
+
+*[class~="topic/table"] {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+*[class~="topic/note"] {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+*[class~="topic/xref"][href]:before {
+  content: none !important;
+}
+
+/* List styles*/
+/*
+ul {
+    padding-inline-start: 0 !important;
+}
+*/
+*[class~="topic/ul"] {
+   font-size: 14pt;
+   margin-top: 5px !important;
+   margin-bottom: 5px !important;
+   list-style-type: hyphen;
+}
+
+*[class~="topic/ol"] {
+   font-size: 14pt;
+   margin-top: 5px !important;
+   margin-bottom: 5px !important;
+}
+
+*[class~="topic/ul"], *[class~="topic/ul"], *[class~="topic/ul"] {
+	page-break-inside: avoid !important; 
+}
+
+*[class~="topic/note"] {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+*[class~="topic/li"] {
+	margin-left: 0.5cm;
+}
+
+
+*[class~='topic/ul'] > *[class~='topic/li'] *[class~='topic/ul'] > *[class~='topic/li'] {
+/* list-style-type : dash !important ; */
+margin-left: -0.5cm;
+}
+
+
+*[class~="topic/entry"] > *[class~="topic/li"],
+*[class~="topic/entry"] > *[class~="topic/sli"] {
+	margin-left: 0 !important;
+}
+
+
+/* TOC styles */
+
+*[class~="map/topicmeta"]:before {
+    content: none !important;
+}
+
+*[class~="topic/navtitle"]:before {
+    font-size: 14pt !important;
+	display: inline !important;
+}
+
+*[class~="topic/navtitle"]{
+    font-size: 14pt !important;
+}
+
+*[class~="- toc/title title"]{
+    font-size: 14pt !important;
+    page-break-after: avoid !important;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+*[class~="map/topicref"] > *[class~="map/topicref"] {
+    font-size: 14pt !important;
+	font-weight: normal !important;
+	display: none !important;
+}
+
+*[class ~= "toc/title"] {
+	font-size: 16pt !important;
+	font-weight: bold !important;
+}
+
+*[class ~= "map/topicref"][is-chapter]:not([is-part]) > *[class ~= "map/topicmeta"] > *[class ~= "topic/navtitle"]:before{
+    content: counter(toc-chapter) " " !important;
+}
+
+*[class ~= "map/topicref"][is-chapter]:not([is-part])[outputclass="appendix-title"] > *[class ~= "map/topicmeta"] > *[class ~= "topic/navtitle"]:before{
+    display: none !important;
+}
+
+*[class ~= "map/map"][numbering^='deep'] *[class ~= "map/topicmeta"] > *[class ~= "topic/navtitle"]:before {
+    display: inline !important;
+}
+
+/* MiniTOC styles */
+
+*[class~="chapter/minitoc-desc"],
+*[class~="chapter/minitoc-links"] {
+	display: block;
+	width: 100%;
+}
+
+*[class~="chapter/minitoc-links"] *[class~="topic/desc"] {
+	content: "В этом разделе:";
+}
+
+*[class~="chapter/minitoc-desc"] {
+	border-left: none;
+	padding-left: 0;
+}
+
+*[class~="chapter/minitoc-links"] *[class~="topic/link"] {
+	display: list-item;
+	list-style-type: bullet;
+	margin-left: 20px;
+}
+
+/* Link styles */
+
+*[class ~= "topic/xref"] {
+    text-decoration: none !important;
+	color: black !important;
+}
+
+*[class ~= "topic/xref"][href]:after,
+*[class ~= "topic/link"][href]:after {
+    content: none !important;
+}
+
+a[type="table"], a[type="fig"] {
+    font-size: 0 !important;
+}
+
+a[type="table"] > *[class~="topic/ph"] {
+    font-size: 14pt !important;
+}
+
+a[type="fig"] > *[class~="topic/ph"] {
+    font-size: 14pt !important;
+}
+
+/**[class ~= "topic/xref"]:not([type="table"]):not([type="fig"]) {
+	content: target-counter(attr(href), chapter) "." target-counter(attr(href), section1) !important;
+}*/
+
+*[class ~= "topic/xref"]:not([type="table"]):not([type="fig"]) {
+    content: target-counters(attr(href), chapter-and-sections, ".") !important;
+}
+
+/* Topic titles*/
+
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"]:before {
+    content: counter(chapter) " " !important;
+}
+
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/topic"] > *[class ~= "topic/title"]:before{
+        content: counter(chapter) "." counter(section1) " " !important;
+}
+
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] > *[class ~= "topic/title"]:before{
+        content: counter(chapter) "." counter(section1) "." counter(section2) " " !important;
+}
+
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] > *[class ~= "topic/title"]:before{
+        content: counter(chapter) "." counter(section1) "." counter(section2) "." counter(section3) " " !important;
+}
+
+*[class~="topic/title"][outputclass="appendix-title"] {
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+	text-indent: 1cm;
+	text-align: right;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+*[class~="topic/title"][outputclass="appendix-title"]:before {
+	display: none;
+}
+
+*[class~="topic/topic"][outputclass="t-introduction"] > *[class~="topic/title"] {
+	bookmark-label:none !important;	
+}
+*[class~="topic/topic"] > *[class~="topic/title"] {
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+	text-indent: 1cm;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+	text-indent: 1cm;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+	bookmark-label:none !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+	text-indent: 1cm;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+	bookmark-label:none !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+	text-indent: 1cm;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+	bookmark-label:none !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+	text-indent: 1cm;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+	bookmark-label:none !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	font-weight: bold;
+	font-size: 14pt;
+    page-break-after: avoid;
+	text-indent: 1cm;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+	bookmark-label:none !important;
+}

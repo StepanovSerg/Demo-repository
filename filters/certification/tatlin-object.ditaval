@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+    <!--Фильтр контента по типу конструкции изделия-->
+    <!--Примеры наcтройки:-->
+    <!--- один аппаратный блок в стоечном исполнении: include=rack, exclude=desk, exclude=multi-blocks
+- один аппаратный блок в настольном исполнении: exclude=rack, include=desk, exclude=multi-blocks
+- несколько аппаратных блоков в стоечном исполнении: include=rack, exclude=desk, include=multi-blocks
+- несколько аппаратных блоков в настольном исполнении: exclude=rack, include=desk, include=multi-blocks-->
+    <prop action="include" att="props" val="rack"/>
+    <prop action="exclude" att="props" val="desk"/>
+    <prop action="include" att="props" val="multi-blocks"/>
+    <prop action="include" att="props" val="multi-nodes"/>
+    <prop action="include" att="props" val="KNS"/>   <!--ООО «КНС ГРУПП»:-->
+    <prop action="exclude" att="props" val="YCS"/>   <!--ООО «Ядро Клиентские Системы»:-->
+    <prop action="exclude" att="props" val="YCROH"/> <!--ООО «Ядро Центр Разработки Объектных Хранилищ»:-->
+  </val>

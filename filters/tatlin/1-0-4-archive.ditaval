@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+    <prop action="include" att="deliveryTarget" val="1-0-4"/>
+
+    <prop action="exclude" att="deliveryTarget" val="1-0-2"/>
+    <prop action="exclude" att="deliveryTarget" val="1-0-3"/>
+
+    <prop action="exclude" att="deliveryTarget" val="2-0"/>
+    <prop action="exclude" att="deliveryTarget" val="2-2"/>
+    <prop action="exclude" att="deliveryTarget" val="2-3"/>
+    <prop action="exclude" att="deliveryTarget" val="2-4"/>
+    <prop action="exclude" att="deliveryTarget" val="2-5"/>
+    <prop action="exclude" att="deliveryTarget" val="2-6"/>
+    <prop action="exclude" att="deliveryTarget" val="2-7"/>
+    <prop action="exclude" att="deliveryTarget" val="3-0"/>
+    
+    <prop action="exclude" att="product" val="se"/>
+    
+  </val>

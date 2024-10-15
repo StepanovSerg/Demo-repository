@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+    <prop action="exclude" att="product" val="сервер"/>
+    <prop action="exclude" att="platform" val="openpower"/>
+    <prop action="exclude" att="props" val="not-ready"/>
+	
+    <prop action="include" att="product" val="СХД"/>
+    
+    <prop action="exclude" att="deliveryTarget" val="1.0"/>
+    <prop action="exclude" att="deliveryTarget" val="1.1"/>
+    <prop action="include" att="deliveryTarget" val="1.2"/>
+    <prop action="exclude" att="deliveryTarget" val="1.3"/>
+    <prop action="exclude" att="deliveryTarget" val="1.4"/>
+    <prop action="exclude" att="deliveryTarget" val="1.5"/>
+    <prop action="exclude" att="deliveryTarget" val="1.5.1"/>
+    <prop action="exclude" att="deliveryTarget" val="1.6"/>
+  </val>

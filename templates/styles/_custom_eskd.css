@@ -1,0 +1,113 @@
+/* @import 'p-accessibility.css'; */
+
+@import 'p-pages-and-headers-gost.css';
+@import 'p-front-page-gost.css';
+@import 'p-images-gost.css';
+@import 'p-styling-gost.css';
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+/* Debug */
+/** {
+   border: 1pt solid blue !important;
+}
+
+*:before(1000) {
+   content:  oxy_name() !important;
+   font-size: 8pt !important;
+   color: orange;
+}
+
+*:before(999) {
+   content: "[ class= '" attr(class) "'] " !important;
+   font-size: 8pt !important;
+   color: orange;
+}*/
+
+@font-face {
+	font-family: "GOST Type A", Symbol;
+	src: url('../fonts/gost_a.ttf');	
+}
+
+@font-face {
+	font-family: "GOST Type A", Symbol;
+	src: url('../fonts/gost_ai.ttf');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "GOST Type A", Symbol;
+	src: url('../fonts/gost_ab.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "GOST Type A", Symbol;
+	src: url('../fonts/gost_abi.ttf');
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* For the content inside the document.*/
+:root {
+	font-family: "GOST Type A";
+	font-size: 14pt !important;	
+	hyphens: auto;
+	text-align: justify;
+	orphans: 3;
+	widows: 4;
+}
+
+/* для заголовков переносы выкл. */
+*[class~="topic/topic"] > *[class~="topic/title"] {
+	hyphens: none;
+	text-align: left;
+}
+
+/*-------------------------------
+ * The default page layout.
+ *-------------------------------*/
+@page {
+	size: A4;
+	background-image: url("../background/gost_pages.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 1cm;
+	margin-right: 1.5cm;
+	margin-left: 2.5cm;
+	margin-bottom: 2.5cm;
+}
+
+@page table-of-contents:first:left, table-of-contents:first:right {
+	size: A4;
+	background-image: url("../background/gost_first_page.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 1cm;
+	margin-right: 1.5cm;
+	margin-left: 2.5cm;
+	margin-bottom: 4.4cm;
+}
+
+ @page :left {
+	@top-left {
+		content: none;
+	}
+}
+
+@page :right {
+	@top-right {
+		content: none;
+	}
+}
+
+@page chapter:first:left {
+	@top-left {
+		content: none;
+	}
+}
+@page chapter:first:right {
+	@top-right {
+		content: none;
+	}
+}

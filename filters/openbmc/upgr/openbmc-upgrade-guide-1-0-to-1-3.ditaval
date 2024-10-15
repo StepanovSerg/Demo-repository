@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+  <prop action="exclude" att="product" val="СХД"/>
+  <prop action="include" att="product" val="сервер"/>
+  
+  <prop action="exclude" att="props" val="not-ready"/>
+
+</val>

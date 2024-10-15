@@ -1,0 +1,68 @@
+/*
+ * =====================================================
+ * 
+ * Defines the front page aspect.
+ * 
+ * It matches the XSL created <front-page/> element.
+ * 
+ * =====================================================
+ */
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+*[class~="front-page/front-page-title"]:before(6) {
+	font-family: "GOST Type A";
+    text-align: left;
+    content: "";
+	font-weight:normal;
+    display:block;
+	margin-top: 3cm;
+    content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]") !important;
+}
+
+*[class~="front-page/front-page-title"]:before(5) {
+    content: "УТВЕРЖДАЮ\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(4) {
+    content: "Генеральный директор\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(3) {
+    content: "OOO \00ab КНС ГРУПП\00bb\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(2) {
+    content: "Морозов Н.Л.\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(1) {
+    content: "_____________________" !important;
+}
+
+*[class ~= "bookmap/booktitle"]:after(12) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: "";
+	font-weight: bold;
+	font-size: 14pt;
+	margin-top: 2cm;
+}
+
+*[class ~= "bookmap/booktitle"]:after(12) {
+    content: "Дата введения: " oxy_xpath("//*[contains(@class, 'bookmap/day')]/text()") "." oxy_xpath("//*[contains(@class, 'bookmap/month')]/text()") "." oxy_xpath("//*[contains(@class, 'bookmap/year')]/text()") '\A' !important;
+}
+
+*[class ~= "bookmap/booktitle"]:after(13) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: "";
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+*[class ~= "bookmap/booktitle"]:after(13) {
+    content: "Без ограничения срока действия" !important;
+}

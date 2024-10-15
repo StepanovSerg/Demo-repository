@@ -1,0 +1,145 @@
+/*
+ * =====================================================
+ *
+ * Defines the front page aspect.
+ *
+ * It matches the XSL created <front-page/> element.
+ *
+ * =====================================================
+ */
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+@page front-page {
+	background-color: #1226aa;
+	background-image: url('../background/A4-front.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-oxy-initial-page-number: odd;
+
+}
+
+@page front-page-common {
+	background-color: #1226aa;
+	background-image: url('../background/A4-front-no-product.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-oxy-initial-page-number: odd;
+}
+
+*[class~='front-page/front-page'] {
+	page: front-page-common;
+}
+
+/* *[class~='front-page/front-page'] {
+	page: front-page;
+} */
+
+@page my-blank-page {
+	/* Hide the page numbers */
+	background-image: url("../background/A4-norm.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@bottom-center {
+		display: block;
+		padding-bottom: 3cm;
+		padding-top: -1cm;
+		content: "\00a9 2022 YADRO, все права защищены. YADRO\00ae, VESNIN\00ae, TATLIN\00ae, VEGMAN\00ae  и KORNFELD\00ae  являются торговыми марками компании YADRO (или ее дочерних компаний), зарегистрированными на территории России и других стран.";
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+*[class~='front-page/front-page-title'] {
+	display: block;
+	text-align: left;
+	padding-top: 1cm;
+	font-family: FuturaPT;
+	font-size: 24pt;
+	font-weight: bold;
+	color: white;
+}
+
+*[class ~= "bookmap/booktitle"]:lang(ru):after {
+    display:block;
+    content: "Редакция " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/data()');
+	font-size: 12pt;
+	margin-top: 2in;
+}
+
+*[class ~= "bookmap/booktitle"]:lang(en):after {
+    display:block;
+    content: "Edition " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/data()');
+	font-size: 12pt;
+	margin-top: 2in;
+}
+
+*[class~='front-page/front-page']:after(1) {
+	page: my-blank-page;
+	display: block;
+	content: '\2002';
+	color: transparent;
+	background: none;
+}
+
+@page front-page, front-page-common {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}

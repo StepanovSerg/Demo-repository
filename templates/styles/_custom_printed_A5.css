@@ -1,0 +1,138 @@
+/* @import 'p-accessibility.css'; */
+
+@import 'p-pages-and-headers-A5.css';
+@import 'p-front-page-A5.css';
+@import 'p-images-gost.css';
+@import 'p-styling-gost.css';
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+@font-face {
+	font-family: FuturaPT;
+	src: url('../fonts/FuturaPT-Book.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-style: italic;
+	src: url('../fonts/FuturaPT-BookObl.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-weight: bold;
+	src: url('../fonts/FuturaPT-Demi.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-style: italic;
+	font-weight: bold;
+	src: url('../fonts/FuturaPT-DemiObl.ttf');
+}
+
+/* For the content inside the document.*/
+:root {
+	font-family: FuturaPT;
+	font-size: 12px;
+}
+
+/* переносы */
+:root {
+	hyphens: auto;
+	text-align: justify;
+	orphans: 3;
+}
+
+/* для заголовков переносы выкл. */
+*[class~="topic/title"] {
+	hyphens: none;
+	text-align: left;
+}
+
+/*-------------------------------
+ * The default page layout.
+ *-------------------------------*/
+@page {
+	size: A4;
+	background-image: url(oxy_xpath(' if (//bookmeta/audience/@type="services") then "../background/A4-norm_disclaimer.svg" else "../background/A4-norm.svg" '));
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 2cm;
+	margin-bottom: 2.5cm;
+}
+
+ @page :left {
+	@top-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+}
+
+@page :right {
+	@top-right {
+		content: none;
+	}
+}
+
+@page chapter:first:left {
+	@top-left {
+		content: none;
+	}
+}
+@page chapter:first:right {
+	@top-right {
+		content: none;
+	}
+}
+
+*[class~="topic/topic"] > *[class~="topic/title"] {
+	color: #2c3b97;;
+	font-weight: bold;
+	text-decoration: underline;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;;
+	font-weight: bold;
+	text-decoration: underline;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;;
+	font-weight: bold;
+	text-decoration: underline;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;;
+	font-weight: bold;
+	text-decoration: underline;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;;
+	font-weight: bold;
+	text-decoration: underline;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;;
+	font-weight: bold;
+	text-decoration: underline;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}

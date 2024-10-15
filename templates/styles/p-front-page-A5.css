@@ -1,0 +1,98 @@
+/*
+ * =====================================================
+ *
+ * Defines the front page aspect.
+ *
+ * It matches the XSL created <front-page/> element.
+ *
+ * =====================================================
+ */
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+@page front-page {
+	background-image: url('../background/A4-front.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-oxy-initial-page-number: even;
+
+}
+
+@page front-page-common {
+	background-image: url('../background/A5-front-no-product.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	-oxy-initial-page-number: even;
+}
+
+*[class~='front-page/front-page'] {
+	page: front-page-common;
+}
+
+/* *[class~='front-page/front-page'] {
+	page: front-page;
+} */
+
+@page my-blank-page {
+	background-image: url("../background/A4-norm.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	@top-center {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+}
+
+*[class~='front-page/front-page-title'] {
+	display: block;
+	text-align: left;
+	margin-top: 8cm;
+	font-family: FuturaPT;
+	font-size: 24pt;
+	font-weight: bold;
+	color: #1226AA;
+}
+
+*[class~='front-page/front-page']:after(1) {
+	page: my-blank-page;
+	display: block;
+	content: '\2002';
+	color: transparent;
+	background: none;
+}
+
+@page front-page, front-page-common {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}

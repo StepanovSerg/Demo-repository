@@ -1,0 +1,78 @@
+*[class ~= "topic/fig"] {
+  text-align: center;
+  font-size: 10pt;
+  font-weight: bold;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+*[class ~= "topic/fig"] > *[class ~= "topic/title"] {
+  page-break-before: avoid !important;
+  page-break-after: auto !important;
+  text-align: center;
+}
+
+*[class ~= "topic/image"] {
+	width: 15cm !important;
+}
+
+*[class ~= "topic/image"][outputclass="no-width"] {
+	width: attr(width, length) !important;
+	height: attr(height, length) !important;
+}
+
+/* Other images, with break placement. */
+*[class ~= "topic/image"][placement='break']{
+  display: block;
+  text-align: center;
+  font-size: 8pt;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+         
+
+/**[outputclass ~= "info-line"] {
+  padding: 70px;
+  }*/
+
+*[outputclass ~= "proc-div"] {
+  padding: 1mm 1mm 1mm 1mm;
+  }
+/**[outputclass ~= "info-div"] > *[outputclass ~= "info-line"] > *[outputclass ~= "left"] {
+  display:inline-block;
+  vertical-align:top;
+  width: 45%;
+}  
+*[outputclass ~= "info-div"] > *[outputclass ~= "info-line"] > *[outputclass ~= "right"] {
+  display:inline-block;
+  vertical-align:top;
+  width: 45%;
+}*/ 
+
+*[outputclass ~= "proc-div"] > *[outputclass ~= "proc-line"] > *[outputclass ~= "text-div"] {
+  display:inline-block;
+  vertical-align:top;
+  width:10cm;
+}  
+*[outputclass ~= "proc-div"] > *[outputclass ~= "proc-line"] > *[outputclass ~= "image-div"] {
+  display:inline-block;
+  padding-left: 30mm;
+  vertical-align:middle;
+  width:16cm;
+}
+
+*[outputclass ~= "image-div"] > *[outputclass ~= "image-line"]  > *[outputclass ~= "left"] {
+  display:inline-block;
+  vertical-align:middle;
+  width:38%;
+  height:25%;
+}  
+*[outputclass ~= "image-div"] > *[outputclass ~= "image-line"] > *[outputclass ~= "right"] {
+  display:inline-block;
+  vertical-align:middle;
+ /*padding-left: 5mm;*/
+  width:60%;
+  height:35%;
+} 

@@ -1,0 +1,216 @@
+/*
+ * =====================================================
+ * 
+ * Defines the front page aspect.
+ * 
+ * It matches the XSL created <front-page/> element.
+ * 
+ * =====================================================
+ */
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+@page front-page {
+	background-image: url('../background/gost_title_page.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 210mm 290mm;
+}
+
+*[class~='front-page/front-page'] {
+	font-family: "GOST Type A";
+	page: front-page;
+}
+
+@page my-blank-page {
+	display: none;
+}
+
+/* Текст до заголовка книги */
+
+*[class~="front-page/front-page-title"]:before(10) {
+	font-family: "GOST Type A";
+    text-align: center;
+   content: oxy_xpath("(//*[contains(@class, 'bookmap/organization')]/text())[1]");
+	width: 350pt;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5cm;
+}
+
+*[class~="front-page/front-page-title"]:before(6) {
+	font-family: "GOST Type A";
+    text-align: left;
+    content: "";
+	font-weight:normal;
+    display:block;
+	margin-top: 3cm;
+}
+
+:root[techreq='yes'] *[class~="front-page/front-page-title"]:before(6) {
+	font-family: "GOST Type A";
+    text-align: left;
+    content: "";
+	font-weight:normal;
+    display:block;
+	margin-top: 3cm;
+    content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]") !important;
+}
+
+*[class~="front-page/front-page-title"]:before(5) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: "";
+	font-weight:bold;
+    display:block;
+	margin-top: 2cm;
+}
+
+:root[techreq='yes'] *[class~="front-page/front-page-title"]:before(5) {
+    content: "УТВЕРЖДАЮ\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(4) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: "";
+    display:block;
+}
+
+:root[techreq='yes'] *[class~="front-page/front-page-title"]:before(4) {
+    content: "Генеральный директор\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(3) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: "";
+    display:block;
+}
+
+:root[techreq='yes'] *[class~="front-page/front-page-title"]:before(3) {
+    content: "OOO \00ab Ядро Клиентские Системы\00bb\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(2) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: "";
+    display:block;
+}
+
+:root[techreq='yes'] *[class~="front-page/front-page-title"]:before(2) {
+    content: "Черкасов Д.А.\A" !important;
+}
+
+*[class~="front-page/front-page-title"]:before(1) {
+    text-align: right;
+    content: "";
+    display:block;
+	margin-top: 1em;
+	margin-bottom: 5cm;
+}
+
+:root[techreq='yes'] *[class~="front-page/front-page-title"]:before(1) {
+    content: "_____________________" !important;
+}
+
+/* Заголовок книги */
+
+*[class~='front-page/front-page-title'] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	font-family: "GOST Type A";
+	font-size: 14pt;
+}
+
+*[class~='front-page/front-page-title'] > *[class~='topic/title'] {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "GOST Type A";
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+/* Текст после заголовка книги */
+
+*[class ~= "bookmap/booktitle"]:after(2) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]") '\A';
+	font-size: 14pt;
+	font-weight: bold;
+	margin-top: 3cm; 
+}
+
+*[class ~= "bookmap/booktitle"]:after(3) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: oxy_xpath("(//*[contains(@class, 'topic/series')]/data())[1]");
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+*[class ~= "bookmap/booktitle"]:after(4) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: "";
+	font-weight: bold;
+	font-size: 14pt;
+	margin-top: 3cm;
+}
+
+[techreq='yes'] *[class ~= "bookmap/booktitle"]:after(4) {
+    content: "Дата введения: " oxy_xpath("//*[contains(@class, 'bookmap/day')]/text()") "." oxy_xpath("//*[contains(@class, 'bookmap/month')]/text()") "." oxy_xpath("//*[contains(@class, 'bookmap/year')]/text()") '\A' !important;
+}
+
+*[class ~= "bookmap/booktitle"]:after(5) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: center;
+    content: "";
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+[techreq='yes'] *[class ~= "bookmap/booktitle"]:after(5) {
+    content: "Без ограничения срока действия" !important;
+}
+
+@page front-page, front-page-common {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}

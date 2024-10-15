@@ -1,0 +1,497 @@
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+/* Codeblock-related styles.*/
+
+*[class~="pr-d/codeblock"] {
+   font-size: 75% !important;
+   margin-top: 5px !important;
+   margin-bottom: 10px !important;
+}
+
+*[expanse='page'] {
+    width: 7in; /* Here should be the size of the page without margins. */
+	margin-left: -0.5em;
+}
+
+*[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -1em;
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -3em;
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -5em;
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -7em;
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -9em;
+}
+
+/* Link styles */
+
+*[class ~= "topic/xref"][href]:not([format="com"]):lang(ru):after,
+*[class ~= "topic/link"][href]:not([format="com"]):lang(ru):after {
+    font-size: 12pt !important;
+	text-decoration: none !important;
+    content: " (стр. " target-counter(attr(href), page) ")"!important;
+}
+
+*[class ~= "topic/xref"][href]:not([format="com"]):after,
+*[class ~= "topic/link"][href]:not([format="com"]):after {
+    font-size: 12pt !important;
+	text-decoration: none !important;
+    content: " (p. " target-counter(attr(href), page) ")" !important;
+}
+
+*[class ~= "topic/xref"] {
+	text-decoration: underline;
+	color: #2c3b97;
+	font-style: italic;
+}
+
+a[type="table"], a[type="fig"] {
+    font-size: 0 !important;
+}
+
+a[type="table"] > *[class~="topic/ph"] {
+    font-size: 12pt !important;
+}
+
+a[type="fig"]:lang(ru):after {
+    display: none !important;
+}
+
+a[type="fig"]:after {
+    display: none !important;
+}
+
+a[type="fig"] > *[class~="topic/ph"] {
+    font-size: 12pt !important;
+}
+
+*[class ~= "topic/fig"] > *[class ~= "topic/title"]:lang(ru):before {
+  content: counter(figcount) "" ": " !important;
+}
+
+*[class ~= "topic/table"] > *[class ~= "topic/title"]:lang(ru):before {
+  content: counter(tablecount) "" ": " !important;
+}
+
+/* CLI commands */
+*[class~="sw-d/cmdname"] {
+	font-family: FuturaPT !important;
+	font-weight: bold !important;
+	font-size: 1em !important;
+}
+
+/* Common paragraph style*/
+
+p {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+*[class~="- topic/topic topic nested0 page-break-after"] {
+  margin-top: 0px !important;
+}
+
+/* Table-related styles */
+
+*[outputclass ~= "whats-new-table"] {
+	 counter-increment: none !important;
+}
+
+*[outputclass ~= "vertical-cell"] > * {
+  display: block;
+  transform: rotate(-90deg) !important;
+  text-align: left !important;
+
+  padding:0;
+  margin:0;
+
+  white-space: nowrap;
+
+  width:150px;
+  height:80px;
+}
+
+*[class~="topic/table"][outputclass="wide-table"] {
+	font-size: 75% !important;
+	text-align: left !important;
+	hyphens: none !important;
+}
+
+*[class~="topic/table"][outputclass="wide-table"] > *[class~="tablecap"] > *[class~="table--title-label"] {
+	display: none !important;
+}
+
+*[class~="topic/table"][outputclass="wide-table"] > *[class~="tablecap"] {
+	font-size: 1.17em !important;
+	font-weight: bold !important;
+	margin-left: -1.5em !important;
+}
+
+*[class~="topic/row"] {
+	page-break-inside: avoid;
+}
+
+*[class~="topic/entry"] {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: left !important;
+}
+
+*[class~="topic/table"][orient="land"] > *[class~="topic/tbody"] > *[class~="topic/row"] > *[class~="topic/entry"] {
+  font-size: 8pt !important;
+  text-align: left !important;
+}
+
+*[class~="topic/table"][orient="land"] > *[class~="topic/thead"] > *[class~="topic/row"] > *[class~="topic/entry"] {
+  font-size: 8pt !important;
+  text-align: center !important;
+}
+
+table > caption {
+  margin-bottom: 5px !important;
+  margin-top: 5px !important;
+}
+
+*[class~="topic/table"] {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  page-break-inside: auto !important;
+}
+
+*[class~="topic/note"] {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background-color: #EEE;
+}
+
+div.note > span.note__title {
+    display: none;
+}
+
+div.note {
+    background-image: url("../images/note.svg") !important;
+    background-position: 0.75em 1em;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+
+div.tip {
+    background-image: url("../images/info.svg") !important;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+
+div.info {
+    background-image: url("../images/info.svg") !important;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+
+div.attention, div.warning,
+div.caution, div.important {
+    background-image: url("../images/warning.svg") !important;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+
+/* div.warning > span.note__title {
+    background-image: url("resources/images/warning.svg") !important;
+}
+
+div.caution > span.note__title {
+    background-image: url("resources/images/warning.svg") !important;
+} */
+
+div.danger {
+    background-image: url("../images/danger.svg") !important;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+div.note > span.note__title {
+  color: transparent !important;
+}
+
+*[outputclass~="selected"] {
+    background-color: #d0d0d0;
+}
+
+*[class~="topic/topic"][outputclass~="wide"] > *[class~="topic/body"] > *[class~="topic/table"] > *[class~="topic/tbody"] > *[class~="topic/row"] > *[class~="topic/entry"] {
+	font-size: 9pt !important;
+}
+
+*[class~="topic/topic"][outputclass~="wide"] > *[class~="topic/body"] > *[class~="topic/table"] > *[class~="topic/thead"] > *[class~="topic/row"] > *[class~="topic/entry"] {
+	font-size: 9pt !important;
+}
+
+*[class~="topic/topic"][outputclass~="wide"] > *[class~="topic/body"] > *[class~="topic/table"] > *[ class = '- topic/tgroup ' ] > *[class~="topic/thead"] > *[class~="topic/row"] > *[class~="topic/entry"] {
+	transform: rotate(-90) !important;
+}
+
+.table thead th {
+    vertical-align: top;
+    border-bottom: 1px solid silver;
+	border-top: 1px solid silver;
+	background-color: whitesmoke;
+	text-align: left !important;
+}
+
+.table td, .table th {
+    border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid silver;
+	text-align: left !important;
+}
+
+.rowsep-1 {
+    border-bottom: 1px solid silver !important;
+}
+
+*[class~="topic/table"][frame] {
+  border-style:none !important;
+}
+
+/* List styles*/
+
+*[class~="topic/ul"] {
+   margin-top: 5px !important;
+   margin-bottom: 5px !important;
+   padding-left: 1em;
+}
+
+*[class~="topic/ol"] {
+   margin-top: 5px !important;
+   margin-bottom: 5px !important;
+   padding-left: 1em;
+}
+
+*[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -2em;
+}
+
+*[class ~= "topic/li"] {
+    margin-left: 0.5em;
+	padding-bottom: 1px;
+}
+
+*[class ~= "topic/li"] > *[class~="topic/ul"] > *[class ~= "topic/li"],
+*[class ~= "topic/li"] > *[class~="topic/ol"] > *[class ~= "topic/li"] {
+    margin-left: 0.5em;
+	padding-bottom: 1px;
+}
+
+*[class ~= "topic/li"] > *[class ~= "topic/li"] > *[class ~= "topic/li"] {
+    margin-left: 0.5em;
+	padding-bottom: 1px;
+}
+
+*[class ~= "topic/li"] > *[class ~= "topic/li"] > *[class ~= "topic/li"] > *[class ~= "topic/li"] {
+    margin-left: 0.5em;
+	padding-bottom: 1px;
+}
+
+*[class~="topic/ol"] > *[class~="topic/li"] {
+  list-style-type: decimal;
+}
+*[class~="topic/ol"]  > *[class~="topic/li"] *[class~="topic/ol"] > *[class~="topic/li"] {
+  list-style-type:-oxy-lower-cyrillic-ru !important;
+}
+*[class~="topic/ol"]  > *[class~="topic/li"] *[class~="topic/ol"] > *[class~="topic/li"] *[class~="topic/ol"] > *[class~="topic/li"] {
+  list-style-type: decimal !important;
+}
+
+/* TOC styles */
+*[class~="toc/title"]{
+	color: #2c3b97;
+	font-weight: bold;
+	font-size: 2em;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+/* Sections */
+*[class~="sectiontitle"] {
+	color: black;
+}
+
+*[class~="sectiontitle"]:before {
+	display: none !important;
+}
+
+/* MiniTOC styles */
+
+/* Change from inline to blocks to stack them one over the other. */
+
+*[class~="chapter/minitoc-desc"],
+*[class~="chapter/minitoc-links"] {
+	display: inline;
+	width: 100%;
+}
+/* No need for the 'Topics:' label. */
+*[class~="chapter/minitoc-links"] *[class~="topic/desc"] {
+	display: inline;
+	content: "В этом разделе:";
+}
+
+/* Add background for the links list. */
+*[class~="chapter/minitoc-links"] {
+	background-color:none;
+	padding:0.5em;
+}
+
+/* Remove the border and the padding from the description. We do not need that separator. */
+*[class~="chapter/minitoc-desc"] {
+	border-left: 1px solid silver;
+	padding-left: 0;
+}
+
+/* Add a number before each of the links. */
+*[class~="chapter/minitoc-links"] *[class~="topic/link"] {
+	display:block;
+	/*list-style-type:bullet;*/
+	margin-left:1em;
+}
+
+/* *[class~="chapter/minitoc"] > *[class~="chapter/minitoc-links"] > *[class~="topic/related-links"] > *[class~="topic/linklist"] > *[class~="topic/link"] {
+	border: 1px solid brown;
+	color: #2c3b97 !important;
+} */
+
+*[class~="ulchildlink"] > strong > * {
+	color: #2c3b97 !important;
+}
+
+/*For Production docs: no title numbers, no page breaks before chapters*/
+
+:root[a|productiondoc^="yes"] *[class ~= "topic/topic"][is-chapter] {
+     -oxy-page-group:auto;
+     page: auto;
+}
+
+:root[a|productiondoc^='yes'] *[class ~= "topic/topic"][is-part] {
+     -oxy-page-group:start;
+     page: chapter;
+}
+
+/**[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"]:before {
+    content: "0" counter(chapter, decimal-leading-zero) " " !important;
+}
+
+*[class ~= "topic/topic"][is-part] > *[class ~= "topic/title"]:before {
+    content: "0" counter(section1, decimal-leading-zero) " " !important;
+}*/
+
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"]:before{
+        display: none !important;
+}
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/topic"] > *[class ~= "topic/title"]:before{
+        display: none !important;
+}
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] > *[class ~= "topic/title"]:before{
+        display: none !important;
+}
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] > *[class ~= "topic/topic"] > *[class ~= "topic/title"]:before{
+        display: none !important;
+}
+
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "map/topicref"][is-chapter]:not([is-part]) > *[class ~= "map/topicmeta"]:before {
+        display: none !important;
+}
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "map/topicref"][is-chapter]:not([is-part]) > *[class ~= "map/topicref"] > *[class ~= "map/topicmeta"]:before {
+        display: none !important;
+}
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "map/topicref"][is-chapter]:not([is-part]) > *[class ~= "map/topicref"] > *[class ~= "map/topicref"] > *[class ~= "map/topicmeta"]:before {
+        display: none !important;
+}
+:root[a|productiondoc^='yes'] *[class ~= "map/map"] *[class ~= "map/topicref"][is-chapter]:not([is-part]) > *[class ~= "map/topicref"] > *[class ~= "map/topicref"] > *[class ~= "map/topicref"] > *[class ~= "map/topicmeta"]:before {
+        display: none !important;
+}
+
+*[class~="topic/topic"][outputclass="no-page-break"] {
+	page-break-before: avoid !important;
+}
+
+/* Landscape layout */
+
+/**[class~="topic/table"] > *[class~="topic/tgroup"][cols='5'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='6'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='7'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='8'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='9'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='10'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='11'],
+*[class~="topic/table"] > *[class~="topic/tgroup"][cols='12'] {
+    max-width: 100%;
+    table-layout:auto;
+}
+
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='5']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='6']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='7']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='9']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='10']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='11']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='12']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='5']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='6']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='7']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='9']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='10']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='11']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='12']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='5']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='6']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='7']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='8']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='9']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='10']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='11']),
+*[class~="topic/topic"]:has(*:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *:not([class~="topic/topic"]) > *[class~="topic/table"] > *[class~="topic/tgroup"][cols='12']){
+      page: landscape-page;
+} */
+
+*[outputclass~="wide"] {
+	page: landscape-page !important;
+}
+
+/* Footnotes */
+*[class~="topic/fn"] {
+	font-size: 8pt;
+	padding-top: 0.25em;
+}
+
+*[class~="topic/fn"] > *[class~="topic/xref"]:not([format="com"]):after {
+	font-size: 8pt !important;
+}
+
+*[class~="topic/fn"]:first-of-type {
+	padding-top: 0.25em;
+}
+
+*[class ~= "topic/fn"]:footnote-call {
+	font-weight: bold;
+    color:#2c3b97;
+}
+
+*[class ~= "topic/fn"]:footnote-marker {
+	font-weight: bold;
+    color:#2c3b97;
+}

@@ -1,0 +1,745 @@
+/*
+ * ================================================
+ * 
+ * Pages layout and headers.
+ * 
+ * ================================================
+ */
+
+/* This is inherited to all headers and footers.*/
+@page {
+	font-size: 20pt;
+}
+
+@page {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}	
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+	}
+	@bottom-right {
+		content: "\2001";
+	}
+	@bottom-right-corner {
+		content: "\2001";
+	}
+}
+
+*[class ~= "map/map"] > *[class ~= "toc/toc"] + *[class ~= "topic/topic"]{
+    counter-reset: none !important;
+}
+
+*[class~="topic/topic"][outputclass ~= "page-reset"]{
+    counter-reset:page 1;
+    counter-increment:chapter;
+}
+
+/*-------------------------------
+ * The front and back-matter page. 
+ *-------------------------------*/
+@page matter-page {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-top: -1mm;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal) !important;
+	}
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+	}
+	@bottom-right {
+		content: "\2001";
+	}
+	@bottom-right-corner {
+		content: "\2001";
+	}
+}
+
+@page matter-page:left {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-top: -1mm;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal) !important;
+	}
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+	}
+	@bottom-right {
+		content: "\2001";
+	}
+	@bottom-right-corner {
+		content: "\2001";
+	}
+}
+
+@page matter-page:right {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-top: -1mm;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal) !important;
+	}
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+	}
+	@bottom-right {
+		content: "\2001";
+	}
+	@bottom-right-corner {
+		content: "\2001";
+	}
+}
+/*-------------------------------
+ * Alternate page headers layout.
+ *-------------------------------*/
+
+@page :left {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+}
+
+@page :right{
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+}
+
+/* 
+ * Collect the title of the map, so it can be used as a string (variable) in the headers 
+ * Other strings are collected int the CSS file p-numbering-*.css
+ */
+
+*[class~='front-page/front-page-title'] > *[class~='bookmap/mainbooktitle'] {
+	string-set: maptitle content();
+}
+
+*[class~='front-page/front-page-title'] > *[class~='bookmap/booktitlealt'] {
+	string-set: maptitle content();
+}
+
+*[class ~= 'bookmap/edition'] {
+    string-set: edition attr(text);
+}
+
+/*-------------------------------
+ * The TOC page layout.
+ *-------------------------------*/
+
+/* Clear the default headers */
+@page table-of-contents {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+	}
+	@bottom-right {
+		content: "\2001";
+	}
+	@bottom-right-corner {
+		content: "\2001";
+	}
+}
+
+@page table-of-contents:left {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+}
+@page table-of-contents:right {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+}
+/*Do not put a header on the first page of the TOC*/
+@page table-of-contents:first:left {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+    }
+    @bottom-right {
+ 		content: "\2001";
+    }
+    @bottom-right-corner {
+		content: "\2001";
+    }
+}
+@page table-of-contents:first:right {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+    }
+    @bottom-right {
+ 		content: "\2001";
+    }
+    @bottom-right-corner {
+		content: "\2001";
+    }
+}
+
+/*-------------------------------
+ * The index page.
+ *-------------------------------*/
+
+@page index {
+	@top-left-corner {
+		content: "\2001";
+	}
+	@top-left {
+		content: "\2001";
+	}
+	@top-center {
+		content: "\2001";
+	}
+	@top-right {
+		content: "\2001";
+	}
+	@top-right-corner {
+		content: "\2001";
+	}
+	@bottom-left-corner {
+		content: "\2001";
+	}
+	@bottom-left {
+		content: "\2001";
+	}
+	@bottom-center {
+		content: "\2001";
+	}
+	@bottom-right {
+		content: "\2001";
+	}
+	@bottom-right-corner {
+		content: "\2001";
+	}
+}
+
+/*-------------------------------
+ * The chapter page layout.
+ *-------------------------------*/
+
+@page chapter {
+	/* Currently inherit from the default page.*/
+}
+
+/* No headers on the chapter first page. */
+/* @page chapter:first:left {
+	@top-left {
+		content: "\2001";
+	}
+}
+@page chapter:first:right {
+	@top-right {
+		content: "\2001";
+	}
+} */
+
+@page chapter:first:left {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+}
+@page chapter:first:right {
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -5mm;
+		padding-top: 2mm;
+		content: "\2001";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		margin-right: -17mm;
+		margin-left: 17mm;
+		padding-top: 9.5mm;
+		content: oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/component')]/data())[1]"));
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: 7mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]");
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -1.5mm;
+		content: counter(page, decimal);
+	}
+}
+
+/*-------------------------------
+ * The blank pages. 
+ *-------------------------------*/
+
+/* No headers for the blank pages. */
+@page :blank {
+	@top-left {
+		content: "\2001";
+	}
+	@top-right {
+		content: "\2001";
+	}
+}
+
+/*-------------------------------
+ * The page layout for large tables.
+ *-------------------------------*/
+
+@page landscape-page:right {
+	size: landscape;
+
+	@top-left {
+		content: "\2001";
+	}
+	@top-center {
+		content: "\2001";
+	}
+	@top-right {
+		content: "\2001";
+	}
+
+	@right-bottom {
+		content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) ' | ' counter(page);
+		transform: rotate(90);
+		vertical-align: middle;
+		text-align: right;
+	}
+}
+
+@page landscape-page:left {
+	size: landscape;
+
+	@top-left {
+		content: "\2001";
+	}
+	@top-center {
+		content: "\2001";
+	}
+	@top-right {
+		content: "\2001";
+	}
+
+	@right-top {
+		content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) ' | ' counter(page);
+		transform: rotate(90);
+		vertical-align: middle;
+		text-align: left;
+	}
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+    <!--Настройки фильтра (ответ на вопрос): exclude(нет), include(да).-->    
+    
+    <prop action="exclude" att="product" val="vegman-s"/>
+    <prop action="exclude" att="product" val="vegman-r"/>
+    <prop action="exclude" att="product" val="vegman-n110"/>    
+    
+    <prop action="exclude" att="otherprops" val="og"/>
+    <prop action="exclude" att="props" val="not-ready"/>
+    <prop action="exclude" att="product" val="vegman-s220"/>
+    <prop action="exclude" att="product" val="vegman-s320"/>
+    <prop action="exclude" att="product" val="nactech-X-C3"/>
+    <prop action="exclude" att="product" val="СХД"/>
+    <prop action="exclude" att="props" val="revb"/>
+    <prop action="exclude" att="platform" val="openpower"/>   
+    <prop action="exclude" att="product" val="x2-105"/>
+    <prop action="exclude" att="product" val="x2-210"/>    
+    <prop action="exclude" att="product" val="x2-205"/>
+    <prop action="exclude" att="product" val="x3-105"/>
+    <prop action="exclude" att="product" val="x3-115"/>    
+    <prop action="exclude" att="product" val="x3-205"/>
+    
+    <prop action="include" att="product" val="сервер"/>
+    <prop action="include" att="product" val="x2-200"/>
+    <prop action="include" att="otherprops" val="pg"/>
+</val>

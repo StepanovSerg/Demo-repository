@@ -1,0 +1,153 @@
+/* @import 'p-accessibility.css'; */
+
+@import 'p-pages-and-headers-releasenotes.css';
+@import 'p-front-page.css';
+@import 'p-images.css';
+@import 'p-styling-releasenotes.css';
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+/* Debug */
+/** {
+   border: 1pt solid blue !important;
+}
+
+*:before(1000) {
+   content:  oxy_name() !important;
+   color: orange;
+}
+
+*:before(999) {
+   content: "[ class= '" attr(class) "'] " !important;
+   color: orange;
+}*/
+
+@font-face {
+	font-family: FuturaPT;
+	src: url('../fonts/FuturaPT-Book.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-style: italic;
+	src: url('../fonts/FuturaPT-BookObl.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-weight: bold;
+	src: url('../fonts/FuturaPT-Demi.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-style: italic;
+	font-weight: bold;
+	src: url('../fonts/FuturaPT-DemiObl.ttf');
+}
+
+/* For the content inside the document.*/
+:root {
+	font-family: FuturaPT;
+	font-size: 10px;
+}
+
+/* переносы */
+:root {
+	hyphens: auto;
+	text-align: justify;
+}
+
+/*-------------------------------
+ * The default page layout.
+ *-------------------------------*/
+@page {
+	size: A4;
+	background-image: url("../background/tatlin_release_notes_bg.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 1cm;
+	margin-top: 3.5cm;
+	margin-bottom: 2cm;
+}
+
+*[class ~= 'map/map'] > *[class ~= 'toc/toc'] {
+    display:none !important;
+}
+*[class ~= 'map/map'] > *[class ~= 'front-page/front-page']{
+    display:none !important;
+}
+*[class~='topic/topic'][is-chapter] {
+    -oxy-page-group : auto;
+}
+*[class~="topic/section"] > *[class~="topic/title"] {
+	hyphens: manual;
+	text-align: left;
+	font-size: 14pt !important;
+	color: #2c3b97;
+	font-weight: bold;
+    page-break-after: avoid;
+	margin-top: 1em !important;
+    margin-bottom: 2px !important;
+}
+
+*[class~="topic/topic"] > *[class~="topic/title"] {
+	hyphens: manual;
+	text-align: left;
+	font-size: 18pt !important;
+	color: #2c3b97;
+	font-weight: bold;
+    page-break-after: avoid;
+	margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	hyphens: manual;
+	text-align: left;
+	font-size: 18pt !important;
+	color: #2c3b97;
+	font-weight: bold;
+    page-break-after: avoid;
+	margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	hyphens: manual;
+	text-align: left;
+	font-size: 18pt !important;
+	color: #2c3b97;
+	font-weight: bold;
+    page-break-after: avoid;
+	margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	hyphens: manual;
+	text-align: left;
+	font-size: 18pt !important;
+	color: #2c3b97;
+	font-weight: bold;
+    page-break-after: avoid;
+	margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	hyphens: manual;
+	text-align: left;
+	font-size: 18pt !important;
+	color: #2c3b97;
+	font-weight: bold;
+    page-break-after: avoid;
+	margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+	hyphens: manual;
+	text-align: left;
+	font-size: 18pt !important;
+	color: #2c3b97;
+	font-weight: bold;
+    page-break-after: avoid;
+	margin-top: 2px !important;
+    margin-bottom: 2px !important;
+}

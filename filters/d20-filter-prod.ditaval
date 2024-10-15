@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+    <prop action="include" att="deliveryTarget" val="d20-prod"/>
+    <prop action="exclude" att="deliveryTarget" val="a20-prod"/>
+    <prop action="exclude" att="deliveryTarget" val="a20-demo"/>
+    <prop action="exclude" att="deliveryTarget" val="d20-demo"/>
+  </val>

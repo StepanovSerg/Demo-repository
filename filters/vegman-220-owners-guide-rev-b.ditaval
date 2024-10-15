@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<val>
+  <prop action="exclude" att="props" val="not-ready"/>
+  
+  <prop action="exclude" att="product" val="СХД"/>
+  <prop action="include" att="product" val="сервер"/>
+  
+  <prop action="exclude" att="product" val="nactech-X-C2"/>
+  <prop action="exclude" att="product" val="nactech-X-C3"/>
+  
+  <prop action="include" att="product" val="vegman-s"/>
+  <prop action="include" att="product" val="vegman-s220"/>
+  <prop action="exclude" att="product" val="vegman-s320"/>
+  
+  <prop action="exclude" att="product" val="vegman-n110"/>  
+  
+  <prop action="exclude" att="product" val="vegman-r"/>
+  <prop action="exclude" att="product" val="vegman-r120-g1"/>
+  <prop action="exclude" att="product" val="vegman-r120-g2"/>
+  <prop action="exclude" att="product" val="vegman-r220-g2"/>
+
+  
+  <prop action="exclude" att="otherprops" val="pg"/>
+  <prop action="include" att="otherprops" val="og"/>
+  
+  <prop action="exclude" att="props" val="reva"/>
+  <prop action="include" att="props" val="revb"/>
+  
+  <prop action="exclude" att="platform" val="openpower"/>
+
+   </val>

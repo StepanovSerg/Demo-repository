@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+  	<prop action="include" att="deliveryTarget" val="1-0"/>
+    
+    <prop action="exclude" att="platform" val="cert"/>
+    <prop action="exclude" att="props" val="not-ready"/>
+  </val>

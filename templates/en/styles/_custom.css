@@ -1,0 +1,131 @@
+/* @import 'p-accessibility.css'; */
+
+@import 'p-pages-and-headers.css';
+@import 'p-front-page.css';
+@import 'p-images.css';
+@import 'p-styling.css';
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+/* Debug */
+/** {
+   border: 1pt solid blue !important;
+}
+
+*:before(1000) {
+   content:  oxy_name() !important;
+   font-size: 8pt !important;
+   color: orange;
+}
+
+*:before(999) {
+   content: "[ class= '" attr(class) "'] " !important;
+   font-size: 8pt !important;
+   color: orange;
+}*/
+
+@font-face {
+	font-family: FuturaPT;
+	src: url('../fonts/FuturaPT-Book.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-style: italic;
+	src: url('../fonts/FuturaPT-BookObl.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-weight: bold;
+	src: url('../fonts/FuturaPT-Demi.ttf');
+}
+
+@font-face {
+	font-family: FuturaPT;
+	font-style: italic;
+	font-weight: bold;
+	src: url('../fonts/FuturaPT-DemiObl.ttf');
+}
+
+/* For the content inside the document.*/
+:root {
+	font-family: FuturaPT;
+	font-size: 12pt;
+}
+
+/* переносы */
+:root {
+	hyphens: auto;
+	text-align: justify;
+	orphans: 3;
+}
+
+/* для заголовков переносы выкл. */
+*[class~="topic/title"] {
+	hyphens: none;
+	text-align: left;
+}
+
+/*-------------------------------
+ * The default page layout.
+ *-------------------------------*/
+@page {
+	size: A4;
+	background-image: url(oxy_xpath(' if (//bookmeta/audience/@type="services") then "../background/A4-norm_disclaimer.svg" else "../background/A4-norm.svg" '));
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 1.5cm;
+	margin-bottom: 2.2cm;
+}
+
+*[class~="topic/topic"] > *[class~="topic/title"] {
+	color: #2c3b97;
+	font-weight: bold;
+	font-size: 2.5em;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;
+	font-weight: bold;
+	font-size: 2em;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;
+	font-weight: bold;
+	font-size: 1.5em;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;
+	font-weight: bold;
+	font-size: 1.25em;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1em;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+*[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] *[class~="topic/topic"] > *[class~="topic/title"] {
+  color: #2c3b97;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1em;
+    page-break-after: avoid;
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}

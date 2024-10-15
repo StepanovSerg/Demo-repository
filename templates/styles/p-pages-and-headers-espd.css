@@ -1,0 +1,440 @@
+/*
+ * ================================================
+ * 
+ * Pages layout and headers.
+ * 
+ * ================================================
+ */
+
+/* This is inherited to all headers and footers.*/
+@page {
+	font-size: 20pt;
+}
+
+@page {
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+*[class ~= "map/map"] > *[class ~= "toc/toc"] + *[class ~= "topic/topic"]{
+    counter-reset: none !important;
+}
+
+*[class~="topic/topic"][outputclass ~= "page-reset"]{
+    counter-reset:page 1;
+    counter-increment:chapter;
+}
+
+*[class~="topic/topic"][outputclass ~= "chapter-reset"]{
+    counter-reset: chapter 1;
+}
+
+/*-------------------------------
+ * The front and back-matter page. 
+ *-------------------------------*/
+@page matter-page {
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+/*		font-family: 'GOST Type A';
+		font-size: 14pt;
+        text-align: center;
+        vertical-align: top;
+        padding-top: 14mm;
+        margin-left: -1mm;
+		margin-right: 5mm; */
+		content: none;
+	}
+}
+
+@page matter-page:left{
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+/*		font-family: 'GOST Type A';
+		font-size: 14pt;
+        text-align: center;
+        vertical-align: top;
+        padding-top: 14mm;
+        margin-left: -1mm;
+		margin-right: 5mm; */
+		content: none;
+	}
+}
+
+@page matter-page:right{
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+/*		font-family: 'GOST Type A';
+		font-size: 14pt;
+        text-align: center;
+        vertical-align: top;
+        padding-top: 14mm;
+        margin-left: -1mm;
+		margin-right: 5mm; */
+		content: none;
+	}
+}
+/*-------------------------------
+ * Alternate page headers layout.
+ *-------------------------------*/
+
+@page :left {
+	@top-left {
+		content: none;
+	}
+}
+
+@page :right{
+	@top-right {
+		content: none;
+	}
+}
+
+/* 
+ * Collect the title of the map, so it can be used as a string (variable) in the headers 
+ * Other strings are collected int the CSS file p-numbering-*.css
+ */
+
+*[class~='front-page/front-page-title'] > *[class~='bookmap/mainbooktitle'] {
+	string-set: maptitle content();
+}
+
+*[class~='front-page/front-page-title'] > *[class~='bookmap/booktitlealt'] {
+	string-set: maptitle content();
+}
+
+*[class ~= 'bookmap/edition'] {
+    string-set: edition attr(text);
+}
+
+/*-------------------------------
+ * The TOC page layout.
+ *-------------------------------*/
+
+/* Clear the default headers */
+@page table-of-contents {
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+/*		font-family: 'GOST Type A';
+		font-size: 14pt;
+        text-align: center;
+        vertical-align: top;
+        padding-top: 14mm;
+        margin-left: -1mm;
+		margin-right: 5mm;*/
+		content: none;
+	}
+}
+
+@page table-of-contents:left {
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+}
+
+@page table-of-contents:right {
+	@top-right {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+}
+/*Do not put a header on the first page of the TOC*/
+@page table-of-contents:first:left {
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+    }
+    @bottom-right {
+		content: none;    }
+    @bottom-right-corner {
+/*		font-size: 12pt;
+        text-align: left;
+        vertical-align: top;
+        padding-top: 20mm;
+        margin-left: -10mm;*/
+        content: none;
+    }
+}
+@page table-of-contents:first:right {
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 12pt;
+        text-align: center;
+        vertical-align: center;
+		content: counter(page, decimal) '\a' oxy_label(text, oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]"));
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+    }
+    @bottom-right {
+		content: none;
+    }
+    @bottom-right-corner {
+/*		font-size: 12pt;
+        text-align: left;
+        vertical-align: top;
+        padding-top: 20mm;
+        margin-left: -10mm;*/
+        content: none;
+    }
+}
+
+/*-------------------------------
+ * The index page.
+ *-------------------------------*/
+
+@page index {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+/*-------------------------------
+ * The chapter page layout.
+ *-------------------------------*/
+
+@page chapter {
+	/* Currently inherit from the default page.*/
+}
+
+/* No headers on the chapter first page. */
+/* @page chapter:first:left {
+	@top-left {
+		content: none;
+	}
+}
+@page chapter:first:right {
+	@top-right {
+		content: none;
+	}
+} */
+
+/*-------------------------------
+ * The blank pages. 
+ *-------------------------------*/
+
+/* No headers for the blank pages. */
+@page :blank {
+	@top-left {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+}
+
+/*-------------------------------
+ * The page layout for large tables.
+ *-------------------------------*/
+
+@page landscape-page:right {
+	size: landscape;
+
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+
+	@right-bottom {
+		content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) ' | ' counter(page);
+		transform: rotate(90);
+		vertical-align: middle;
+		text-align: right;
+	}
+}
+
+@page landscape-page:left {
+	size: landscape;
+
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+
+	@right-top {
+		content: string(maptitle) string(parttitle) string(chaptertitle) string(sectiontitle) ' | ' counter(page);
+		transform: rotate(90);
+		vertical-align: middle;
+		text-align: left;
+	}
+}

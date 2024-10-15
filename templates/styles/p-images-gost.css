@@ -1,0 +1,43 @@
+figure > figcaption {
+	page-break-before: avoid;
+	page-break-after: auto !important;
+}
+
+*[class ~= "topic/fig"] {
+  text-align: center;
+  font-size: 14pt;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  page-break-inside: avoid;
+}
+
+*[class ~= "topic/fig"] > *[class ~= "topic/title"] {
+	text-align: center;
+	hyphens: none;
+}
+
+/*[class ~= "topic/fig"]  > *[class ~= "topic/image"] {
+  width:100%;
+}*/
+
+*[class ~= "topic/fig"] > *[class ~= "topic/title"]:before {
+	display: inline;
+    content: "Рисунок " counter(figcount) " - " !important;
+}
+
+*[class ~= "fig--title-label"] {
+	display: none !important;
+}
+
+*[class ~= "topic/image"] {
+  page-break-before: avoid;
+}
+
+/* Other images, with break placement. */
+*[class ~= "topic/image"][placement='break']{
+  display: block;
+  text-align: center;
+  font-size: 14pt;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}

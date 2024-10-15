@@ -1,0 +1,688 @@
+/*
+ * ================================================
+ *
+ * Pages layout and headers.
+ *
+ * ================================================
+ */
+
+/* This is inherited to all headers and footers.*/
+@page {
+	font-size: 8pt;
+	font-family: FuturaPT;
+    @footnote {
+		content: leader('_');
+		color:silver;
+    }
+}
+
+/*-------------------------------
+ * Alternate page headers layout.
+ *-------------------------------*/
+
+@page :left {
+	@top-left-corner {
+		content: counter(page) !important;
+	}
+	@top-right {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(chaptertitle) !important;
+	}
+    @footnote {
+		content: leader('_');
+		color:silver;
+    }
+}
+
+@page :right{
+	@top-right-corner {
+		content: counter(page) !important;
+	}
+	@top-left {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(chaptertitle) !important;
+	}
+    @footnote {
+		content: leader('_');
+		color:silver;
+    }
+}
+
+/*
+ * Collect the title of the map, so it can be used as a string (variable) in the headers
+ * Other strings are collected int the CSS file p-numbering-*.css
+ */
+
+*[class ~= "topic/topic"][is-part] > *[class ~= "topic/title"] {
+    string-set: parttitle " | " counter(part, upper-roman) " - " content(), chaptertitle  ""; /* Avoid propagating a past chapter title on a new part */
+}
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"] {
+    string-set: chaptertitle content() !important;
+}
+
+*[class~='bookmap/booktitlealt'] {
+	string-set: maptitle content() !important;
+}
+
+*[class ~= 'bookmap/edition'] {
+    string-set: edition attr(text) !important;
+}
+
+/*-------------------------------
+ * The TOC page layout.
+ *-------------------------------*/
+
+/* Clear the default headers */
+@page table-of-contents {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+@page table-of-contents:left {
+	@top-left-corner {
+		content: counter(page) !important;
+	}
+	@top-right {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(toc-header) !important;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+@page table-of-contents:right {
+	@top-right-corner {
+		content: counter(page) !important;
+	}
+	@top-left {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(toc-header) !important
+	}
+	@top-left-corner {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+/*Do not put a header on the first page of the TOC*/
+@page table-of-contents:first:left {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+@page table-of-contents:first:right {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+/*-------------------------------
+ * The index page.
+ *-------------------------------*/
+
+@page index {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+/*-------------------------------
+ * The chapter page layout.
+ *-------------------------------*/
+
+@page chapter {
+
+}
+
+@page chapter:left {
+	@top-left-corner {
+		content: counter(page) !important;
+	}
+	@top-right {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(chaptertitle) !important;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+@page chapter:right {
+	@top-right-corner {
+		content: counter(page) !important;
+	}
+	@top-left {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(chaptertitle) !important;
+	}
+	@top-left-corner {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+/* No headers on the chapter first page. */
+@page chapter:first:left {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+@page chapter:first:right {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+/*-------------------------------
+ * The blank pages.
+ *-------------------------------*/
+
+/* No headers for the blank pages. */
+@page :blank {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+/*-------------------------------
+ * The front and back-matter page.
+ *-------------------------------*/
+@page matter-page {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+@page matter-page:left {
+	@top-left-corner {
+		content: counter(page) !important;
+	}
+	@top-right {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(chaptertitle) !important;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+@page matter-page:right {
+	@top-right-corner {
+		content: counter(page) !important;
+	}
+	@top-left {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' !important;
+	}
+	@top-left-corner {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+	@right-bottom {
+		content: none;
+	}
+	@right-top {
+		content: none;
+	}
+}
+
+/*-------------------------------
+ * The page layout for large tables.
+ *-------------------------------*/
+@page landscape-page {
+	size: landscape;
+	background-image: url("../background/A3-norm.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 1.5cm;
+	margin-bottom: 2.2cm;
+
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@right-bottom {
+		content: none;
+	}
+	@right-top {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}
+
+@page landscape-page:right {
+	@top-right-corner {
+		content: counter(page) !important;
+	}
+	@top-left {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(chaptertitle) !important;
+	}
+	@top-left-corner {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+	@right-bottom {
+		content: none;
+	}
+	@right-top {
+		content: none;
+	}
+}
+
+@page landscape-page:left {
+	@top-left-corner {
+		content: counter(page) !important;
+	}
+	@top-right {
+		content: string(maptitle) " Ред. " oxy_xpath('//*[contains(@class, " bookmap/edition ")]/text()') ' | ' string(chaptertitle) !important;
+	}
+	@top-left {
+		content: none;
+	}
+	@top-center {
+		content: none;
+	}
+	@top-right-corner {
+		content: none;
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		content: none;
+	}
+	@bottom-center {
+		content: none;
+	}
+	@bottom-right {
+		content: none;
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+	@right-bottom {
+		content: none;
+	}
+	@right-top {
+		content: none;
+	}
+}
+
+*[class~="topic/topic"][outputclass ~= "page-reset"]{
+    counter-reset:page 1;
+}

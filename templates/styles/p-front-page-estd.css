@@ -1,0 +1,229 @@
+/*
+ * =====================================================
+ * 
+ * Defines the front page aspect.
+ * 
+ * It matches the XSL created <front-page/> element.
+ * 
+ * =====================================================
+ */
+
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+@page front-page {
+	background-image: url('../background/estd_title_page.svg');
+	background-size: 210mm 290mm;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 3.6cm;
+	margin-bottom: 10cm;
+}
+
+*[class~='front-page/front-page'] {
+	font-family: "GOST Type A";
+	page: front-page;
+}
+
+@page my-blank-page {
+	display: none;
+}
+
+/* Текст до заголовка книги */
+
+*[class~="front-page/front-page-title"]:before(9) {
+	font-family: "GOST Type A";
+    text-align: center;
+   content: oxy_xpath("(//*[contains(@class, 'bookmap/organization')]/text())[1]");
+	width: 350pt;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5cm;
+}
+
+*[class~="front-page/front-page-title"]:before(8) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: "";
+	font-weight:bold;
+    display:block;
+	margin-top: 2cm;
+}
+
+*[class~="front-page/front-page-title"]:before(7) {
+	font-family: "GOST Type A";
+    text-align: right;
+    display:block;
+    content: "УТВЕРЖДАЮ\A";
+}
+
+*[class~="front-page/front-page-title"]:before(6) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: " ";
+    display:block;
+}
+
+*[class~="front-page/front-page-title"]:before(5) {
+	font-family: "GOST Type A";
+    text-align: right;
+    display:block;
+    content: "Генеральный директор ООО «Ядро Лабс» \A" 
+             "Маршин В.В. \A\A";
+    
+}
+
+*[class~="front-page/front-page-title"]:before(4) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: " ";
+    display:block;
+}
+
+*[class~="front-page/front-page-title"]:before(3) {
+    display:block;
+	font-family: "GOST Type A";
+    text-align: right;
+    content: "________________________\A\A";
+}
+
+*[class~="front-page/front-page-title"]:before(2) {
+	font-family: "GOST Type A";
+    text-align: right;
+    content: " ";
+    display:block;
+}
+
+*[class~="front-page/front-page-title"]:before(1) {
+    display:block;
+	font-family: "GOST Type A";
+    text-align: right;
+	margin-bottom: 4cm;
+    content: oxy_xpath("//*[contains(@class, 'bookmap/day')]/text()") "   " oxy_xpath("//*[contains(@class, 'bookmap/month')]/text()") "   " oxy_xpath("//*[contains(@class, 'bookmap/year')]/text()") " г.";
+}
+
+
+/* Заголовок книги */
+
+*[class~='front-page/front-page-title'] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	font-family: "GOST Type A";
+	font-size: 14pt;
+}
+
+*[class~='front-page/front-page-title'] > *[class~='topic/title'] {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "GOST Type A";
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+/* Текст после заголовка книги */
+
+/*[class ~= "bookmap/booktitle"]:after(2) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: right;
+	content: none;
+	font-size: 14pt;
+	font-weight: normal;
+	margin-top: 2cm; 
+}
+
+*[class ~= "bookmap/booktitle"]:after(3) {
+	font-family: "GOST Type A";
+    display:block;
+	text-align: right;
+	content: none;
+	font-size: 14pt;
+	font-weight: normal;
+} */
+
+@page front-page, front-page-common {
+	@top-left-corner {
+		content: none;
+	}
+	@top-left {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		margin-left: -4mm;
+		margin-right: -100mm;
+		padding-top: 1mm;
+		content: "ООО " '\00AB' "КНС ГРУПП" '\00BB' '\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002\2002' 
+		"ТИ";
+	}
+	@top-center {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: center;
+		padding-top: 26mm;
+		margin-left: -44mm;
+		margin-right: -44mm;
+		content: "Сборка " oxy_xpath("(//*[contains(@class, 'topic/prodname')]/data())[1]");
+		/*oxy_label(text, '\2002\2002\2002\2002\2002\2002\2002\2002\2002\2001') */ 
+	}
+	@top-right {
+		font-family: 'GOST Type A';
+		font-size: 16pt;
+        text-align: left;
+		vertical-align: top;
+		padding-top: 5mm;
+		margin-left: -10mm;
+		content: oxy_xpath("(//*[contains(@class, 'topic/prognum')]/data())[1]") /*oxy_xpath("//*[contains(@class, 'front-page/front-page-title')]//*[contains(@class, 'bookmap/mainbooktitle')]//text()")*/;
+	}
+	@top-right-corner {
+		font-family: 'GOST Type A';
+		font-size: 13pt;
+        text-align: left;
+		margin-left: -10mm;
+		padding-top: 6mm;
+		content: counter(page, decimal) 
+		'\2002\2002\2002\2002\2002\2002' 
+		counter(pages, decimal)
+		'\A\A\A\A'
+		oxy_xpath("(//*[contains(@class, 'topic/series')]/text())[1]"); 
+	}
+	@bottom-left-corner {
+		content: none;
+	}
+	@bottom-left {
+		font-family: 'GOST Type A';
+		font-size: 14pt;
+        text-align: left;
+        vertical-align: top;
+		margin-right: -20mm;
+		content: 
+		oxy_xpath("(//*[contains(@class, 'xnal-d/otherinfo')]/text())[1]") '\2002'
+		'\A\A' "СОГЛАСОВАНО" '\A\A'
+		oxy_xpath("(//*[contains(@class, 'xnal-d/otherinfo')]/text())[2]") '\2002';
+	}
+	@bottom-center {
+		font-family: 'GOST Type A';
+		font-size: 14pt;
+        text-align: center;
+        vertical-align: top;
+		content: 
+		oxy_xpath("(//*[contains(@class, 'xnal-d/firstname')]/text())[1]") '\2002'
+		'\A\A\A\A'
+		oxy_xpath("(//*[contains(@class, 'xnal-d/firstname')]/text())[2]") '\2002'
+		'\A\A\A\A'
+		"Москва" '\A' oxy_xpath("//*[contains(@class, 'bookmap/year')]/text()");
+	}
+	@bottom-right {
+		font-family: 'GOST Type A';
+		font-size: 14pt;
+        text-align: right;
+        vertical-align: top;
+		content: 
+		"______________________________"
+		'\A\A\A\A'
+		"______________________________";
+	}
+	@bottom-right-corner {
+		content: none;
+	}
+}

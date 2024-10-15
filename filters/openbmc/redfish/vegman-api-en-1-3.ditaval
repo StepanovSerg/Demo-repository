@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+
+    <prop action="exclude" att="product" val="СХД"/>
+    <prop action="exclude" att="props" val="not-ready"/>
+
+    <prop action="include" att="product" val="сервер"/>
+
+    <prop action="exclude" att="deliveryTarget" val="1-2-en"/>
+    <prop action="exclude" att="deliveryTarget" val="1-2-ru"/>
+    <prop action="include" att="deliveryTarget" val="1-3-en"/>
+    <prop action="exclude" att="deliveryTarget" val="1-3-ru"/>
+    <prop action="exclude" att="deliveryTarget" val="1-4-en"/>
+    <prop action="exclude" att="deliveryTarget" val="1-4-ru"/>
+    <prop action="exclude" att="deliveryTarget" val="1-5-en"/>
+    <prop action="exclude" att="deliveryTarget" val="1-5-ru"/>
+    <prop action="exclude" att="deliveryTarget" val="1-5-1-en"/>
+    <prop action="exclude" att="deliveryTarget" val="1-5-1-ru"/>
+    <prop action="exclude" att="deliveryTarget" val="1.6-en"/>
+    <prop action="exclude" att="deliveryTarget" val="1.6-ru"/>
+
+  </val>

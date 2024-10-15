@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <val>
+    <prop action="exclude" att="props" val="not-ready"/>
+    <prop action="exclude" att="product" val="сервер"/>
+    <prop action="exclude" att="product" val="vegman-r"/>
+    <prop action="exclude" att="product" val="vegman-n110"/>
+    <prop action="exclude" att="product" val="vegman-s"/>
+    <prop action="exclude" att="product" val="bios"/>
+    
+    <prop action="include" att="product" val="СХД"/>
+    <prop action="include" att="product" val="tatlin-s"/>
+    <prop action="include" att="product" val="uefi"/>
+  </val>

@@ -1,0 +1,181 @@
+@namespace a "http://www.oxygenxml.com/extensions/publishing/dita/css/params";
+
+/* Codeblock-related styles.*/
+
+*[class~="pr-d/codeblock"] {
+   font-size: 75% !important;
+   margin-top: 5px !important;
+   margin-bottom: 5px !important;
+}
+
+*[expanse='page'] {
+    width: 7.5in; /* Here should be the size of the page without margins. */
+}
+
+*[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -2em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -4em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -6em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -8em;    
+}
+
+*[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[class ~= "topic/li"] *[expanse='page'] {
+    margin-left: -10em;    
+}
+
+/* CLI commands */
+*[class~="sw-d/cmdname"] {
+	font-family: FuturaPT !important;
+	font-weight: bold !important;
+	font-size: 1em !important;
+}
+
+/* Common paragraph style*/
+
+*[class~="page-break-after"] {
+  margin-top: 0px !important;
+}
+
+p {
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+}
+
+*[class~="yadro-quality-disclaimer"] {
+  margin: 5px !important;
+  position: absolute !important;
+  bottom: 60px !important;
+  font-size: 10pt;
+  text-align: justify !important;
+}
+
+*[class ~= "topic/xref"] {
+	text-decoration: underline;
+	color: #2c3b97;
+	font-style: italic;
+}
+
+/* Table-related styles */
+
+*[class~="topic/table"][outputclass~="odd-even"] {
+	border: 2px solid brown;
+}
+
+*[class~="topic/table"][outputclass~="odd-even"] > *[class~="topic/row"]:nth-child(even){ background: #f7f7f7; }
+
+*[class~="topic/entry"] {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+*[class~="rn-header-entry"] {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-align: left !important;
+  hyphens: manual;
+}
+
+*[class~="table--title-label"]{
+    display: none;
+}
+
+table > caption {
+    color: #2c3b97;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 5px;
+	font-size: 14pt !important;
+}
+
+*[class~="table-row-odd"]{
+    background-color: white;
+}
+
+*[class~="table-row-even"]{
+    background-color: #dbdbdb;
+}
+
+/* List styles*/
+
+*[class~="topic/ul"] {
+   margin-top: 3px !important;
+   margin-bottom: 3px !important;
+}
+
+*[class~="topic/ol"] {
+   margin-top: 3px !important;
+   margin-bottom: 3px !important;
+}
+
+*[class ~= "topic/li"] {
+    margin-left: 0.5em !important;    
+	margin-bottom: 0.5em !important;
+}
+
+/* Link Styles */
+
+*[class ~= "topic/xref"][href]:after,
+*[class ~= "topic/link"][href]:after {
+    content: none !important;
+}
+
+/*For Release notes: no title numbers, page breaks before chapters*/
+
+*[class ~= "map/topicmeta"] > *[class ~= "topic/navtitle"]:before {
+    display:none !important; 
+}
+
+*[class ~= "topic/topic"][is-chapter]:not([is-part]) > *[class ~= "topic/title"]:before {
+    content: "" !important;
+}
+
+*[class ~= "topic/topic"][is-chapter] {
+	/* Each chapter starts a new page sequence, so the :first selector applies to each of them. */
+     -oxy-page-group:start; 
+     page: chapter; 
+}
+
+div.note > span.note__title {
+  color: transparent !important;
+}
+
+* [class~="table-rn"] * [class~="topic/thead"] * [class~="topic/row"] { background: #EEEEEE; }
+
+* [class~="table-rn"] * [class~="topic/row"]:nth-child(even){ background: #EEEEEE; }
+
+/* Footnotes */
+*[class~="topic/fn"] {
+	font-size: 8pt;
+	padding-top: 0.25em;
+}
+
+*[class~="topic/fn"] > *[class~="topic/xref"]:not([format="com"]):after {
+	font-size: 8pt !important;
+}
+
+*[class~="topic/fn"]:first-of-type {
+	padding-top: 0.25em;
+}
+
+*[class ~= "topic/fn"]:footnote-call {
+	font-weight: bold;
+    color:#2c3b97;
+}
+
+*[class ~= "topic/fn"]:footnote-marker {
+	font-weight: bold;
+    color:#2c3b97;
+}
