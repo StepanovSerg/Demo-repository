@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-characteristics" rev="1">
+    <title>Проверка основных технических характеристик</title>
+    <body>
+        <p>Проверка производится путем визуального осмотра изделия.</p>
+        <p>Результат проверки считается положительным, если основные технические характеристики
+            изделия соответствуют значениям, приведенным в таблице <xref
+                href="#test-characteristics/table" format="dita"/>.</p>
+        <table conkeyref="path-to-product/specs_table" id="table">
+            <tgroup cols="1">
+                <tbody>
+                    <row>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+
+    </body>
+</topic>

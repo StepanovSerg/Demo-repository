@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="ru" rev="2">
+    <booktitle>
+        <mainbooktitle><ph conkeyref="path-to-product/Product"/></mainbooktitle>
+        <booktitlealt>Руководство по эксплуатации</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <publisherinformation>
+            <organization>Общество с ограниченной ответственностью &#171;КНС
+                ГРУПП&#187;</organization>
+        </publisherinformation>
+        <prodinfo>
+            <prodname><data conkeyref="path-to-product/PCEH_data"/>РЭ</prodname>
+            <vrmlist>
+                <vrm version="1" release="0" modification="0"/>
+            </vrmlist>
+        </prodinfo>
+    </bookmeta>
+    <frontmatter>
+        <mapref href="key.ditamap"/>
+        <booklists>
+            <toc/>
+            <abbrevlist href="user-guide/abstract.dita"/>
+        </booklists>
+    </frontmatter>
+    <chapter href="user-guide/description-head.dita">
+        <topicref href="user-guide/function.dita"/>
+        <topicref href="user-guide/measure-tools.dita"/>
+        <topicref href="user-guide/charasteristics.dita"/>
+        <topicref href="user-guide/device-description.dita" outputclass="page-break-before"/>
+        <topicref href="user-guide/package.dita" outputclass="page-break-before"/>
+        <topicref href="user-guide/marking.dita"/>
+    </chapter>
+    <chapter href="user-guide/usage-head.dita">
+        <topicref href="user-guide/operation-limitations.dita"/>
+        <topicref href="user-guide/preparing.dita"/>
+        <topicref href="user-guide/device-using.dita"/>
+    </chapter>
+    <chapter href="user-guide/technical-service.dita"/>
+    <chapter href="user-guide/repair.dita"/>
+    <chapter href="common/req-storage.dita"/>
+    <chapter href="common/req-shipping.dita"/>
+    <chapter href="user-guide/utilization.dita"/>
+    <backmatter/>
+</bookmap>

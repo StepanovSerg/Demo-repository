@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-completeness-requirements" rev="1">
+    <title>Требования к комплектности</title>
+    <body>
+        <p>Комплектность модуля должна соответствовать спецификации <ph
+                conkeyref="path-to-product/PCEH"/>.</p>
+    </body>
+</topic>

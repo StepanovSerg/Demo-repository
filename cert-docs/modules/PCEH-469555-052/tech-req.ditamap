@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="ru" rev="2">
+    <booktitle>
+        <mainbooktitle><ph conkeyref="path-to-product/Product"/></mainbooktitle>
+        <booktitlealt>Технические условия</booktitlealt>
+    </booktitle>
+    <bookmeta>       
+        <authorinformation>
+            <personinfo>
+                <namedetails>
+                    <personname>
+                        <firstname>Сигаев А.М.</firstname>
+                        <generationidentifier>Генеральный директор</generationidentifier>
+                        <otherinfo>ООО &#171;Ядро Центр Разработки&#187;</otherinfo>
+                    </personname>
+                </namedetails>
+            </personinfo>
+            <personinfo>
+                <namedetails>
+                    <personname>
+                        <firstname>Морозов Н.Л.</firstname>
+                        <generationidentifier>Генеральный директор</generationidentifier>
+                        <otherinfo>ООО &#171;КНС ГРУПП&#187;</otherinfo>
+                    </personname>
+                </namedetails>
+            </personinfo>
+        </authorinformation>
+        <publisherinformation>
+            <organization>Общество с ограниченной ответственностью &#171;КНС
+                ГРУПП&#187;</organization>
+        </publisherinformation>
+        <prodinfo>
+            <prodname id="prod-id">
+                <data conkeyref="path-to-product/Techreq_data"/>
+            </prodname>
+            <vrmlist>
+                <vrm version="1" release="0" modification="0"/>
+            </vrmlist>
+            <series><data conkeyref="path-to-product/PCEH_data"/>ТУ</series>
+            <prognum>Код ОКПД2: <data conkeyref="path-to-product/OKPD2_data"/></prognum>
+        </prodinfo>
+        <bookchangehistory>
+            <approved>
+                <completed>
+                    <day>30</day>
+                    <month>12</month>
+                    <year>2019</year>
+                </completed>
+            </approved>
+        </bookchangehistory>
+    </bookmeta>
+    <frontmatter>
+        <mapref href="key.ditamap"/>
+        <booklists>
+            <toc/>
+            <abbrevlist href="tech-req/abstract.dita"/>
+        </booklists>
+    </frontmatter>
+    <chapter href="tech-req/req-technical.dita">
+        <topicref href="tech-req/req-completeness.dita"/>
+        <topicref href="tech-req/req-construction.dita"/>
+        <topicref href="tech-req/req-appearance.dita"/>
+        <topicref href="tech-req/req-packaging.dita"/>
+        <topicref href="tech-req/req-marking.dita"/>
+    </chapter>
+    <chapter href="tech-req/req-environment.dita"/>
+    <chapter href="tech-req/rules-acceptance-head.dita">
+        <topicref href="tech-req/rules-common.dita"/>
+        <topicref href="tech-req/rules-acceptance-tests.dita"/>
+    </chapter>
+    <chapter href="tech-req/test-methods-head.dita">
+        <topicref href="tech-req/test-completeness.dita"/>
+        <topicref href="tech-req/test-construction.dita"/>
+        <topicref href="tech-req/test-appearance.dita"/>
+        <topicref href="tech-req/test-packaging.dita"/>
+        <topicref href="tech-req/test-marking.dita"/>
+    </chapter>
+    <chapter href="tech-req/storage-shipping-head.dita">
+        <topicref href="common/req-storage.dita"/>
+        <topicref href="common/req-shipping.dita"/>
+    </chapter>
+    <chapter href="tech-req/notes.dita"/>
+    <chapter href="tech-req/warranty.dita"/>
+    <chapter href="tech-req/list-ref-docs.dita"/>
+    <backmatter/>
+</bookmap>

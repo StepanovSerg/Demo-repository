@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="toolkit-completeness" rev="1">
+    <title>Требования к обеспечению </title>
+    <body>
+        <p>Для выполнения процедуры программирования требуются:</p>
+        <ul conkeyref="path-to-product/firmware-tools" id="ul_wf2_tsj_lvb">
+            <li/>
+        </ul>
+    </body>
+</topic>

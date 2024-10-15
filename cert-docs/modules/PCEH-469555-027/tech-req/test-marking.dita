@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-test-marking" rev="1">
+    <title>Проверка требований к маркировке</title>
+    <body>
+        <p>Проверка проводится путем внешнего осмотра модуля и его упаковки.</p>
+        <p>Результат проверки считается положительным, если маркировка модуля и его упаковки
+            соответствует требованиям п. <xref href="req-marking.dita"/> настоящих ТУ.</p>
+    </body>
+</topic>

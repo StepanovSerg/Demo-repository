@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-packaging-requirements" rev="1">
+    <title>Требования к упаковке</title>
+    <body>
+        <p>Упаковочная тара модуля должна быть выполнена из материала, экранирующего
+            электростатическое поле и соответствующего ГОСТ&#160;Р&#160;53734.5.3-2013.</p>
+    </body>
+</topic>

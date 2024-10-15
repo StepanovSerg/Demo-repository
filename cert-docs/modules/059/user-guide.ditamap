@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="ru">
+    <booktitle>
+        <mainbooktitle><ph conkeyref="path-to-product/Product"/></mainbooktitle>
+        <booktitlealt>Руководство по эксплуатации</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <shortdesc><?oxy-placeholder content="Введи краткое описание изделия"?></shortdesc>
+        <authorinformation>
+            <organizationinfo>
+                <namedetails>
+                    <organizationnamedetails>
+                        <organizationname>Общество с ограниченной ответственностью &#171;КНС ГРУПП&#187;</organizationname>
+                    </organizationnamedetails>
+                </namedetails>
+                <addressdetails><locality><postalcode/></locality><country></country></addressdetails>
+                <contactnumbers>
+                    <contactnumber type="telephone"></contactnumber>
+                </contactnumbers>
+                <emailaddresses>
+                    <emailaddress></emailaddress>
+                </emailaddresses>
+                <urls>
+                    <url></url>
+                </urls>
+            </organizationinfo>
+        </authorinformation>
+        <publisherinformation>
+            <organization>Общество с ограниченной ответственностью &#171;КНС
+                ГРУПП&#187;</organization>
+        </publisherinformation>
+        <prodinfo>
+            <prodname><data conkeyref="path-to-product/PCEH_data"/>РЭ</prodname>
+            <vrmlist>
+                <vrm version="1" release="0" modification="0"/>
+            </vrmlist>
+            <series><?oxy-placeholder content="Введи остаток названия изделия, используя спецсимволы &#8194; для центрирования текста"?></series>
+            <prognum><?oxy-placeholder content="Введи обозначение типа документа и децимальный номер"?></prognum>
+        </prodinfo>
+        <bookid>
+            <bookpartno/>
+            <edition></edition>
+            <booknumber/>
+            <maintainer/>
+        </bookid>
+        <bookchangehistory>
+            <approved>
+                <completed>
+                    <day><?oxy-placeholder content="Введи месяц введения документа в действие"?></day>
+                    <month><?oxy-placeholder content="Введи месяц введения документа в действие"?></month>
+                    <year><?oxy-placeholder content="Введи месяц введения документа в действие"?></year>
+                </completed>
+            </approved>
+        </bookchangehistory>
+        <bookrights>
+            <copyrfirst>
+                <year/>
+            </copyrfirst>
+            <copyrlast>
+                <year/>
+            </copyrlast>
+            <bookowner/>
+        </bookrights>
+    </bookmeta>
+    <frontmatter>
+        <mapref href="key.ditamap"/>
+        <booklists>
+            
+            <toc/>
+            <abbrevlist href="user-guide/abstract.dita"/>
+        </booklists>
+                
+        
+    </frontmatter>
+    <chapter href="user-guide/description-head.dita">
+        <topicref href="user-guide/function.dita"/>
+        <!-- ссылка на переменную часть "Назначение", конкретный адрес задать в карте ключей -->
+        <topicref href="user-guide/measure-tools.dita"/>
+        <topicref href="user-guide/charasteristics.dita"/>
+        <topicref href="user-guide/device-description.dita"/>
+        <!-- ссылка на переменную часть "Устройство и работа", конкретный адрес задать в карте ключей -->
+        <topicref href="user-guide/package.dita"/>
+        <topicref href="user-guide/marking.dita"/>
+    </chapter>
+    <chapter href="user-guide/usage-head.dita">
+        <topicref href="user-guide/operation-limitations.dita"/>
+        <topicref href="user-guide/preparing.dita"/>
+            <!-- ссылка на переменную часть "Проверка работы", конкретный адрес задать в карте ключей -->
+        <topicref href="user-guide/device-using.dita"/>
+    </chapter>
+    <chapter href="user-guide/technical-service.dita"/>
+    <chapter href="user-guide/repair.dita"/>
+    <chapter href="common/req-storage.dita"/>
+    <chapter href="common/req-shipping.dita"/>
+    <chapter href="user-guide/utilization.dita"/>
+    <backmatter/>
+</bookmap>

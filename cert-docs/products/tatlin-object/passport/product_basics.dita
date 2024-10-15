@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="product_basics">
+    <title>Основные сведения </title>
+    <body>
+        <p></p>
+        <div outputclass="two-columns">
+            <ph outputclass="column1">Наименование изделия:</ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/Product-short-1"
+                        props="vegman-n110 vegman-r120-g1 vegman-s220"/>
+                    <ph conkeyref="path-to-product/Product-short-2"
+                        props="vegman-r220-g2 vegman-s320"/></b></ph>
+            <p/>
+            <ph outputclass="column1">Обозначение изделия: </ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/PCEH" props="vegman-n110 vegman-r120-g1 vegman-s220"/><ph
+                        conkeyref="path-to-product/PCEH2" props="vegman-r220-g2 vegman-s320"/></b></ph>
+            <p/>
+            <ph outputclass="column1">Серийный (заводской) номер изделия:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Дата изготовления изделия:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Компания-производитель:</ph>
+            <ph outputclass="column2"><b>ООО «КНС ГРУПП»</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b> 123022, Москва, ул. Рочдельская, д.15,
+                стр. 13</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <p/>
+            <ph outputclass="column1">Завод-изготовитель:</ph>
+            <ph outputclass="column2"><b>ООО «ЯДРО ЛАБС»</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b>140030, Московская область</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b>рп. Малаховка, п. Овражки</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b>ул. Лесопитомник, д.&#160;10/1, эт.&#160;4,&#160;пом.&#160;17</b></ph>
+        </div>
+      
+            <div outputclass="two-columns">
+            <p/>
+            <ph outputclass="column1">Изделие соответствует:</ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/Techreq"/></b></ph>
+        </div>
+    </body>
+</topic>

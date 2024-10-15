@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="rules-periodic-tests" rev="1">
+    <title outputclass="page-break-before">Периодические испытания</title>
+    <body>
+        <p>Периодические испытания проводят для периодического подтверждения качества изделия и
+            стабильности технологического процесса в установленный период с целью подтверждения
+            возможности продолжения изготовления изделия по действующей конструкторской и
+            технологической документации и продолжения его приемки. </p>
+        <p>Состав периодических испытаний приведен в таблице <xref
+            href="#rules-periodic-tests/test-periodic-table" format="dita"/>.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" pgwide="1" id="test-periodic-table">
+                <title>Состав периодических испытаний</title>
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="*"/>
+                    <colspec colname="c2" colnum="2" colwidth="*" align="center"/>
+                    <colspec colname="c3" colnum="3" colwidth="*" align="center"/>
+                    <thead>
+                        <row>
+                            <entry morerows="1"><b>Наименование проверки</b></entry>
+                            <entry align="center" namest="c2" nameend="c3">Номер пункта ТУ</entry>
+                        </row>
+                        <row>
+                            <entry align="center"><b>Технические требования</b></entry>
+                            <entry align="center"><b>Методы контроля</b></entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>1. Проверка требований к электромагнитной совместимости </entry>
+                            <entry><xref href="req-emc.dita"/></entry>
+                            <entry><xref href="test-emc.dita"/></entry>
+                        </row>
+                        <row>
+                            <entry>2. Проверка требований к безопасности</entry>
+                            <entry><xref href="req-security.dita"/></entry>
+                            <entry><xref href="test-security.dita"/></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </body>
+</topic>

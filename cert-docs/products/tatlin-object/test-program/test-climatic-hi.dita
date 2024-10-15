@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-climatic-hi" rev="1">
+    <title>Проверка работоспособности в условиях повышенной температуры окружающей среды</title>
+    <body>
+        <p>Проверка проводится при номинальном напряжении электропитания (<ph
+                conkeyref="path-to-product/NomVoltage"/> В).</p>
+        <p>Перед проведением проверки выдержите изделие в климатической камере в течение 3 часов при
+            максимальной температуре, равной <ph conkeyref="path-to-product/Twork_max"/> °С.
+            Относительная влажность воздуха в климатической камере контролируется с помощью
+            гигрометра и должна не превышать <ph conkeyref="path-to-product/Nwork_max"/> %.</p>
+        <p>Для проведения проверки: </p>
+        <ol conkeyref="path-to-product/health-test">
+            <li/>
+        </ol>
+        <p>Результат проверки считается положительным, если:</p>
+        <ul conkeyref="path-to-product/performance">
+            <li/>
+        </ul>
+    </body>
+</topic>

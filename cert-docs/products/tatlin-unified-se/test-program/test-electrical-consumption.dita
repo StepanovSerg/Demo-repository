@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-electrical-consumption" rev="1">
+    <title>Проверка тока потребления</title>
+    <body>
+        <p>Проверка проводится при нижнем предельном напряжении сети электропитания (<ph
+                conkeyref="path-to-product/LowerLimitVoltage"/> В).</p>
+        <p>Ток потребления<ph props="multi-nodes"> аппаратного блока</ph> изделия определяется как
+            сумма значений токов, измеренных на каждом из кабелей электропитания<ph
+                props="multi-nodes"> аппаратного блока</ph> включенного изделия. Измерение тока
+            производится с помощью электроизмерительных клещей, настроенных в режим измерения
+            переменного тока. </p>
+        <p>Для проведения проверки:</p>
+        <ol conkeyref="path-to-product/health-test">
+            <li/>
+        </ol>
+        <p>Результат проверки считается положительным, если ток потребления составляет менее <ph
+                conkeyref="path-to-product/Current"/> А.</p>
+    </body>
+</topic>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="ru" rev="1">
+    <booktitle>
+        <mainbooktitle><ph conkeyref="path-to-product/Product-1"/></mainbooktitle>
+        <booktitlealt>Инструкция по программированию</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <publisherinformation>
+            <organization>Общество с ограниченной ответственностью &#171;КНС
+                ГРУПП&#187;</organization>
+        </publisherinformation>
+        <prodinfo>
+            <prodname><data conkeyref="path-to-product/PCEH_data"/>И1</prodname>
+            <vrmlist>
+                <vrm version="0" release="0" modification="0"/>
+            </vrmlist>
+        </prodinfo>
+    </bookmeta>
+    <frontmatter>
+        <mapref href="key.ditamap"/>
+        <booklists>
+            <toc/>
+            <abbrevlist href="firmware-guide/abstract.dita"/>
+        </booklists>
+    </frontmatter>
+    <chapter href="firmware-guide/toolkit-completeness.dita"/>
+    <chapter href="firmware-guide/preparation-head.dita">
+        <topicref href="firmware-guide/chip-install.dita"/>
+        <topicref href="firmware-guide/firmware-start.dita"/>
+        <topicref href="firmware-guide/chip-data-reading.dita"/>
+        <topicref href="firmware-guide/chip-data-deleting.dita"/>
+    </chapter>
+    <chapter href="firmware-guide/programming-procedure.dita"/>
+    <backmatter/>
+</bookmap>

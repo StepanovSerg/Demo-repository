@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="ru" rev="1">
+    <booktitle>
+        <mainbooktitle><ph conkeyref="path-to-product/Product-1"/></mainbooktitle>
+        <booktitlealt>Технологическая инструкция</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <authorinformation>
+            <personinfo>
+                <namedetails>
+                    <personname>
+                        <firstname>Патутинский А.Н.</firstname>
+                        <otherinfo>Инженер-технолог</otherinfo>
+                    </personname>
+                    <personname>
+                        <firstname>Сигаев А.Н.</firstname>
+                        <otherinfo>Генеральный директор ООО «Ядро Центр Разработки»</otherinfo>
+                    </personname>
+                </namedetails>
+            </personinfo>
+        </authorinformation>
+        <publisherinformation>
+            <organization>Общество с ограниченной ответственностью &#171;КНС
+                ГРУПП&#187;</organization>
+        </publisherinformation>
+        <prodinfo>
+            <prodname>
+                <data conkeyref="path-to-product/Product-5-data"/>
+            </prodname>
+            <vrmlist>
+                <vrm version="1" release="0" modification="0"/>
+            </vrmlist>
+            <series>А</series>
+            <prognum><data conkeyref="path-to-product/PCEH_data"/>ТИ</prognum>
+            <component>
+                <data conkeyref="path-to-product/Product-4-data"/>
+            </component>
+        </prodinfo>
+        <bookchangehistory>
+            <approved>
+                <completed>
+                    <day>20</day>
+                    <month>10</month>
+                    <year>2022</year>
+                </completed>
+            </approved>
+        </bookchangehistory>
+    </bookmeta>
+    <frontmatter>
+        <topicref href="key.ditamap" format="ditamap"/>
+        <booklists>
+            <toc/>
+            <abbrevlist href="tech-instruction/abstract.dita"/>
+        </booklists>
+    </frontmatter>
+    <chapter href="tech-instruction/common-req.dita"/>
+    <chapter href="tech-instruction/input-control.dita"/>
+    <chapter href="tech-instruction/assembling.dita"/>
+    <chapter href="tech-instruction/health-test.dita"/>
+    <backmatter/>
+</bookmap>

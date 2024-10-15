@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="product-name" rev="1">
+    <title><b><b>Наименование и обозначение изделия</b></b></title>
+    <body>
+        <p>Наименование изделия - <ph conkeyref="path-to-product/Product-1"/>.</p>
+        <p>Обозначение изделия - <ph conkeyref="path-to-product/PCEH"/>.</p>
+    </body>
+</topic>

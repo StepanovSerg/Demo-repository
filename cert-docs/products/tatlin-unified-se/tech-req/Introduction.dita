@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qgh_53q_tjb">
+    <title/>
+    <body>
+        <p>Настоящие Технические условия (далее по тексту - ТУ) распространяются на <ph
+                conkeyref="path-to-product/Product_intro"/> (далее по тексту - изделие). <ph
+                conkeyref="function/purpose"/></p>
+        <p>Изделие рассчитано на эксплуатацию в закрытых помещениях в климатических условиях,
+            приведенных в п.&#160;<xref href="ReqClimatic.dita"/> настоящих ТУ.</p>
+        <p>Пример записи изделия в других конструкторских документах:</p>
+        <p>«<ph conkeyref="path-to-product/Product-short-1"/> <ph conkeyref="path-to-product/Techreq" outputclass="visible-data"></ph>».</p>
+    </body>
+</topic>

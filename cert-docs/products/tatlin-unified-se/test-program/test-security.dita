@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-sequrity" rev="1">
+    <title>Проверка требований к безопасности</title>
+    <body>
+        <p>Объем и содержание методики проверки выполнения требований к безопасности устанавливаются
+            в соответствии с ГОСТ IEC 60950-1-2014 и ГОСТ IEC 62311-20.</p>
+    </body>
+</topic>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="function" rev="1">
+    <title>Назначение</title>
+    <body>
+        <p>Назначение изделия - <ph conkeyref="path-to-product/Function"/>.</p>
+        <p>Область применения изделия - <ph conkeyref="path-to-product/Application"/>.</p>
+    </body>
+</topic>

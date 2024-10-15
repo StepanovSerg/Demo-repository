@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="introduction">
+    <title>Введение</title>
+    <body>
+        <p>Настоящая инструкция описывает процедуру сборки <ph
+                conkeyref="path-to-product/Product_rod_p-1"/> (далее по тексту - изделие).</p>
+        </body>
+</topic>

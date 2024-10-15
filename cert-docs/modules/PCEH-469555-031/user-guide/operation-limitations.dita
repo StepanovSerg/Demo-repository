@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-operation-limitations" rev="2">
+    <title>Эксплуатационные ограничения</title>
+    <body>
+        <p>Эксплуатация модуля допускается только в составе <ph
+                conkeyref="path-to-product/Parent-devices"/>.</p>
+    </body> 
+</topic>

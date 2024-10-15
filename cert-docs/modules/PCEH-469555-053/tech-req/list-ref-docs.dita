@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-list-ref-docs" rev="1">
+    <title>Перечень документов, на которые даны ссылки в настоящих ТУ</title>
+    <body>
+        <p>
+            <ol id="ol_hfq_qdz_tjb">
+                <li>ГОСТ&#160;15.309-98. Система разработки и постановки продукции на производство
+                    (СРПП). Испытания и приемка выпускаемой продукции. Основные положения.</li>
+                <li>ГОСТ&#160;Р&#160;53734.5.3-2013. Электростатика. Защита электронных устройств от
+                    электростатических явлений. Требования к упаковке изделий, чувствительных к
+                    электростатическим разрядам.</li>
+                <li>ГОСТ&#160;14192-96. Маркировка грузов (c Изменениями N 1, 2, 3).</li>
+                <li><ph conkeyref="path-to-product/PCEH"/>РЭ. <ph
+                        conkeyref="path-to-product/Product"/>. Руководство по эксплуатации.</li>
+                <li><ph conkeyref="path-to-product/PCEH"/>СБ. <ph
+                        conkeyref="path-to-product/Product"/>. Сборочный чертеж.</li>
+            </ol>
+        </p>
+    </body>
+</topic>

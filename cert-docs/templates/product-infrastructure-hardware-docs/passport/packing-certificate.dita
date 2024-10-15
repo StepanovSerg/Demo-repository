@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="packing-certificate" rev="1">
+    <title>Свидетельство об упаковывании</title>
+    <body>
+        <p/>
+        <div outputclass="two-columns">
+            <ph outputclass="column1">Наименование изделия:</ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/Product-1"/></b></ph>
+            <p/>
+            <ph outputclass="column1">Обозначение изделия: </ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/PCEH"/></b></ph>
+            <p/>
+            <ph outputclass="column1">Серийный (заводской) номер изделия:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+        </div>
+        <p/>
+        <p>Изделие упаковано ООО «ЯДРО ЛАБС» согласно требованиям, предусмотренным в действующих
+            технических условиях.</p>
+        <p/>
+        <div outputclass="two-columns">
+            <p/>
+            <ph outputclass="column1">Должность:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Личная подпись:</ph>
+            <ph outputclass="column2">________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Расшифровка подписи:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Дата (год, месяц, число):</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+        </div>
+    </body>
+</topic>

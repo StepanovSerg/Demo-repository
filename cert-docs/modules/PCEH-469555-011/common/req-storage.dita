@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-req-storage" rev="1">
+    <title>Хранение</title>
+    <body>
+        <p>Модуль должен храниться в условиях закрытых помещений при соблюдении следующих
+            климатических условий:</p>
+        <ul id="ul_njs_wkd_yjb">
+            <li>температура окружающей среды - от <ph conkeyref="path-to-product/Tstor_min"
+                />&#160;°С до <ph conkeyref="path-to-product/Tstor_max"/>&#160;°С;</li>
+            <li>относительная влажность окружающей среды - от <ph
+                    conkeyref="path-to-product/Nstor_min"/>&#160;% до <ph
+                    conkeyref="path-to-product/Nstor_max"/>&#160;% (без образования
+                конденсата).</li>
+        </ul>
+        <p>В воздухе помещения, где производится хранение, не должно присутствовать агрессивных
+            примесей (паров кислот, щелочей).</p>
+        <p>Порядок постановки на хранение и снятия с хранения регламентируется внутренними
+            инструкциями эксплуатирующей организации.</p>
+    </body>
+</topic>

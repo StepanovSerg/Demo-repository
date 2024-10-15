@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="general-terms" rev="1">
+    <title>Общие положения</title>
+    <body>
+        <p>Настоящая программа и методика испытаний (далее по тексту - ПМИ) устанавливает цели,
+            объем, условия, порядок проведения, материально-техническое обеспечение и методы
+            испытаний <ph conkeyref="path-to-product/Product-2"/> (далее по тексту - изделие).</p>
+    </body>
+</topic>

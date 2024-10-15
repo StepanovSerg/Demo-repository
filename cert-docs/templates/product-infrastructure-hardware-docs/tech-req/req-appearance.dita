@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="appearance-requirements" rev="1">
+    <title>Требования к внешнему виду</title>
+    <body>
+        <p>Внешние поверхности корпуса<ph props="multi-blocks"> каждого аппаратного блока</ph>
+            изделия и его внутренних компонентов не должны иметь отслаивания покрытий, сколов,
+            трещин и вмятин.</p>
+        <p>Изоляция кабелей электропитания и кабелей, расположенных внутри<ph props="multi-blocks">
+                каждого аппаратного блока</ph> изделия, не должна иметь царапин и трещин.</p>
+    </body>
+</topic>

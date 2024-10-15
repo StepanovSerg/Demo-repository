@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="input-control" rev="1">
+    <title>Входной контроль</title>
+    <body>
+        <p>Все компоненты, предназначенные для сборки изделия, должны пройти входной контроль ОТК
+            согласно соответствующим инструкциям завода-изготовителя.</p>
+    </body>
+</topic>

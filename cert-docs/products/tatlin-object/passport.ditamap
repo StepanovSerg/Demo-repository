@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="ru" rev="1">
+    <booktitle>
+        <mainbooktitle><ph conkeyref="path-to-product/Product-1"/></mainbooktitle>
+        <booktitlealt>Паспорт</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <publisherinformation>
+            <organization>Общество с ограниченной ответственностью &#171;КНС
+                ГРУПП&#187;</organization>
+        </publisherinformation>
+        <prodinfo>
+            <prodname><data conkeyref="path-to-product/PCEH_data"/>ПС</prodname>
+            <vrmlist>
+                <vrm version="0" release="0" modification="0"/>
+            </vrmlist>
+        </prodinfo>
+    </bookmeta>
+    <frontmatter>
+        <mapref href="key.ditamap"/>
+        <booklists><toc/></booklists>    
+    </frontmatter>
+    <chapter href="passport/general-guidelines.dita"/>
+    <chapter href="passport/basic-information.dita"/>
+    <chapter navtitle="Основные технические данные">
+        <topicref href="passport/function.dita"/>          
+        <topicref href="passport/charasteristics.dita"/>
+    </chapter>
+    <chapter href="passport/completeness.dita"/>
+    <chapter href="passport/warranty.dita"/>
+    <chapter href="passport/packing-certificate.dita"/>
+    <chapter href="passport/acceptance-certificate.dita"/>
+    <chapter navtitle="Особые отметки"/>
+    <backmatter/>
+</bookmap>

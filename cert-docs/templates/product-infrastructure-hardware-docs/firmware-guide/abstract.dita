@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="abstract" rev="1">
+    <title>Введение</title>
+    <body>
+        <p>Настоящая Инструкция описывает процедуру программирования микросхемы в составе <ph
+                conkeyref="path-to-product/Product-2"/>. </p>
+        <p> </p>
+    </body>
+</topic>

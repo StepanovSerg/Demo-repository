@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap xml:lang="ru">
+    <booktitle>
+        <mainbooktitle><ph conkeyref="path-to-product/Product-1"/></mainbooktitle>
+        <booktitlealt>Программа и методика испытаний</booktitlealt>
+    </booktitle>
+    <bookmeta>
+        <shortdesc><?oxy-placeholder content="Введи краткое описание изделия"?></shortdesc>
+        <authorinformation>
+            <organizationinfo>
+                <namedetails>
+                    <organizationnamedetails>
+                        <organizationname>Общество с ограниченной ответственностью &#171;КНС ГРУПП&#187;</organizationname>
+                    </organizationnamedetails>
+                </namedetails>
+                <addressdetails><locality><postalcode/></locality><country></country></addressdetails>
+                <contactnumbers>
+                    <contactnumber type="telephone"></contactnumber>
+                </contactnumbers>
+                <emailaddresses>
+                    <emailaddress></emailaddress>
+                </emailaddresses>
+                <urls>
+                    <url></url>
+                </urls>
+            </organizationinfo>
+        </authorinformation>
+        <publisherinformation>
+            <organization>Общество с ограниченной ответственностью &#171;КНС
+                ГРУПП&#187;</organization>
+        </publisherinformation>
+        <prodinfo>
+            <prodname><data conkeyref="path-to-product/PCEH_data"/>ПМ</prodname>
+            <vrmlist>
+                <vrm version="1" release="0" modification="0"/>
+            </vrmlist>
+            <series><?oxy-placeholder content="Введи остаток названия изделия, используя спецсимволы &#8194; для центрирования текста"?></series>
+            <prognum><?oxy-placeholder content="Введи обозначение типа документа и децимальный номер"?></prognum>
+        </prodinfo>
+        <bookid>
+            <bookpartno/>
+            <edition></edition>
+            <booknumber/>
+            <maintainer/>
+        </bookid>
+        <bookchangehistory>
+            <approved>
+                <completed>
+                    <day><?oxy-placeholder content="Введи месяц введения документа в действие"?></day>
+                    <month><?oxy-placeholder content="Введи месяц введения документа в действие"?></month>
+                    <year><?oxy-placeholder content="Введи месяц введения документа в действие"?></year>
+                </completed>
+            </approved>
+        </bookchangehistory>
+        <bookrights>
+            <copyrfirst>
+                <year/>
+            </copyrfirst>
+            <copyrlast>
+                <year/>
+            </copyrlast>
+            <bookowner/>
+        </bookrights>
+    </bookmeta>
+    <frontmatter>
+        <mapref href="key.ditamap"/>
+        <booklists>
+            
+            <toc/>
+            
+        </booklists>
+        
+        
+    </frontmatter>
+    
+    <chapter href="test-program/general-terms.dita">
+        <topicref href="test-program/product-name.dita"/>
+        <topicref href="test-program/test-types.dita"/>
+        <topicref href="test-program/test-targets.dita"/>
+        <topicref
+            href="test-program/test-conditions.dita"/>
+    </chapter> 
+    
+    <chapter href="test-program/general-requirements.dita">
+        <topicref navtitle="Требования к условиям проведения приемо-сдаточных испытаний">
+            <topicref href="test-program/acceptance-test-place.dita"/>
+            <topicref href="test-program/acceptance-test-tools.dita"/>
+            <topicref href="test-program/acceptance-test-preparation.dita"/>
+        </topicref>
+        <topicref navtitle="Требования к условиям проведения периодических испытаний">
+            <topicref href="test-program/periodical-test-place.dita"/>
+            <topicref href="test-program/periodical-test-tools.dita"/>
+            <topicref href="test-program/periodical-test-preparation.dita"/>
+        </topicref>
+    </chapter>
+    <chapter navtitle="Требования безопасности">
+        <topicref href="test-program/safety-requirements-test.dita"/>
+        <topicref
+            href="test-program/safety-requirements-environment.dita"/>
+    </chapter>
+    <chapter href="test-program/measured-characteristics.dita"/>
+    <chapter href="test-program/acceptance-test-methods.dita">
+        <topicref href="test-program/test-packaging.dita"/>
+        <topicref href="test-program/test-completeness.dita"/>
+        <topicref href="test-program/test-construction.dita"/>
+        <topicref href="test-program/test-characteristics.dita" outputclass="page-break-before"/>
+        <topicref href="test-program/test-appearance.dita"/>
+        <topicref href="test-program/test-marking.dita" outputclass="page-break-before"/>
+        <topicref href="test-program/test-electrical-nom-power.dita"/>
+        <topicref href="test-program/test-electrical-limit-power.dita"/>
+        <topicref href="test-program/test-electrical-consumption.dita"/>
+        <topicref href="test-program/test-climatic-low.dita" outputclass="page-break-before"/>
+        <topicref href="test-program/test-climatic-hi.dita"/>
+        <topicref href="test-program/test-climatic-ship.dita" outputclass="page-break-before"/>
+    </chapter>
+    <chapter href="test-program/periodical-test-methods.dita">
+        <topicref href="test-program/test-emc.dita"/>
+        <topicref href="test-program/test-security.dita"/>
+    </chapter>
+    <chapter href="test-program/accounting.dita"/>
+    <chapter href="test-program/appendix.dita"/>
+    <backmatter/>
+</bookmap>

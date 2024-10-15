@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-specification" rev="2">
+    <title>Спецификация модуля </title>
+    <body>
+        <p><b>НАИМЕНОВАНИЯ И ОБОЗНАЧЕНИЯ</b></p>
+        <p><b>Наименование модуля (имен. падеж, с большой буквы):</b><ph id="Product">Модуль
+                включения и индикации</ph><data id="Product-data">Модуль включения и
+                индикации</data></p>
+        <p><b>Наименование модуля (вин. падеж, с мал. буквы):</b><ph id="Product-1">модуль включения
+                и индикации</ph></p>
+        <p><b>Обозначение ТУ:</b><ph id="Techreq">ТУ26.12.10-025-40043048-2022</ph>
+            <data id="Techreq_data">ТУ26.12.10-025-40043048-2022</data></p>
+        <p><b>Децимальный номер:</b><ph id="PCEH">РСЕН.469555.035</ph>
+            <data id="PCEH_data">РСЕН.469555.035</data></p>
+        <p><b>Код ОКПД2:</b><ph id="OKPD2">26.12.10</ph><data id="OKPD2_data">26.12.10</data></p>
+        <p> </p>
+        <p><b>НАЗНАЧЕНИЕ И ВИД ПО 719ПП</b></p>
+        <p><b>Назначение модуля:</b><ph id="Function">индикация состояния изделия</ph></p>
+        <p><b>Тип модуля по 719ПП с указанием в скобках:</b><ph id="Module-type">(прочие
+                смонтированные печатные платы)</ph></p>
+        <p><b>В составе каких изделий используется модуль:</b><ph id="Parent-devices">серверов и систем хранения
+            данных</ph></p>
+        <p> </p>
+        <p><b>ТРЕБОВАНИЯ К КОНСТРУКЦИИ</b><table frame="all" rowsep="1" colsep="1" pgwide="1"
+                id="construction_table">
+                <title>Габаритные длина и ширина модуля</title>
+                <tgroup cols="2">
+                    <colspec colname="c2" colnum="1" colwidth="*"/>
+                    <colspec colname="c3" colnum="2" colwidth="*"/>
+                    <thead>
+                        <row>
+                            <entry>Длина, мм</entry>
+                            <entry>Ширина, мм</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry align="center">27,0</entry>
+                            <entry align="center">24,0</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><b>ТРЕБОВАНИЯ К ТЕМПЕРАТУРЕ И ВЛАЖНОСТИ ОКРУЖАЮЩЕЙ СРЕДЫ</b></p>
+        <p><b>Минимальная температура при хранении, °С:</b><ph id="Tstor_min">0</ph></p>
+        <p><b>Максимальная температура при хранении, °С:</b><ph id="Tstor_max">плюс 50</ph></p>
+        <p><b>Минимальная отн. влажность при хранении, %:</b><ph id="Nstor_min">5</ph></p>
+        <p><b>Максимальная отн. влажность при хранении, %:</b><ph id="Nstor_max">95</ph></p>
+        <p><b>Минимальная температура при транспортировании, °С:</b><ph id="Tship_min">0</ph></p>
+        <p><b>Максимальная температура при транспортировании, °С:</b><ph id="Tship_max">плюс
+            50</ph></p>
+        <p><b>Минимальная отн. влажность при транспортировании, %: </b><ph id="Nship_min">5</ph></p>
+        <p><b>Максимальная отн. влажность при транспортировании, %: </b><ph id="Nship_max"
+            >95</ph></p>
+        <p> </p>
+        <p><b>УСТРОЙСТВО И РАБОТА МОДУЛЯ</b></p>
+        <div id="device-description">
+            <p>Конструкция модуля представляет собой печатную плату с электронными компонентами и
+                разъемами.</p>
+            <p>Вид модуля показан на рисунке <xref href="#module-specification/image" format="dita"
+                />.</p>
+            <p>
+                <fig id="image">
+                    <title>Вид модуля</title>
+                    <image href="image.png"/>
+                </fig>
+            </p>
+        </div>
+    </body>
+</topic>

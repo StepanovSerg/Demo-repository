@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="measured-characteristics" rev="1">
+    <title>Определяемые характеристики</title>
+    <body>
+        <p>Определяемые основные технические характеристики изделия приведены в таблице <xref
+                href="#measured-characteristics/tech-char" format="dita"/>. </p>
+        <p>
+            <table conkeyref="path-to-product/specs_table" id="tech-char">
+                <tgroup cols="1">
+                    <tbody>
+                        <row>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>Указанные характеристики определяются на приемо-сдаточных испытаниях.</p>
+        <p>Перечень рекомендуемого контрольно-измерительного и технологического оборудования,
+            необходимого для проведения испытаний, приведен в Приложении А настоящей ПМИ.</p>
+    </body>
+</topic>

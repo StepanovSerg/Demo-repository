@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="health-test" rev="1">
+    <title>Проверка работоспособности</title>
+    <body>
+        <p>Проверка работоспособности изделия производится с помощью встроенных индикаторов. </p>
+        <p>Для проведения проверки:</p>
+        <ol conkeyref="path-to-product/health-test">
+            <li/>
+        </ol>
+        <p>Результат проверки считается положительным, если:</p>
+        <ul conkeyref="path-to-product/performance">
+            <li/>
+        </ul>
+    </body>
+</topic>

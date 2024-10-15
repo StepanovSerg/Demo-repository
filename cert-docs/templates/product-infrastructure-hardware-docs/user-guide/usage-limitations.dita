@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="usage-limitations" rev="1">
+    <title>Эксплуатационные ограничения</title>
+    <body>
+        <p>Эксплуатация изделия допускается в климатических условиях:</p>
+        <ul>
+            <li>температура окружающей среды - от <ph conkeyref="path-to-product/Twork_min"
+                />&#160;°С до <ph conkeyref="path-to-product/Twork_max"/>&#160;°С;</li>
+            <li>относительная влажность окружающей среды - от <ph
+                    conkeyref="path-to-product/Nwork_min"/>&#160;% до <ph
+                    conkeyref="path-to-product/Nwork_max"/>&#160;%.</li>
+        </ul>
+        <p>Электропитание изделия должно осуществляться от трехпроводной однофазной электрической
+            сети с номинальным напряжением <ph conkeyref="path-to-product/NomVoltage"/>&#160;В,
+            соответствующей требованиям ГОСТ 29322-2014. Допускается отклонение напряжения
+            электропитания от номинального в пределах от <ph
+                conkeyref="path-to-product/LowerLimitVoltage"/> до <ph
+                conkeyref="path-to-product/UpperLimitVoltage"/>&#160;В.</p>
+
+        <p>Максимальный ток потребления изделия составляет не более <ph
+                conkeyref="path-to-product/Current"/>&#160;А.</p>
+    </body>
+</topic>

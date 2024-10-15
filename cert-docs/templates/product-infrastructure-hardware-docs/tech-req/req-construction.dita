@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="construction-requirements" rev="1">
+    <title>Требования к конструкции </title>
+    <body>
+        <p>Габаритные размеры и масса<ph props="multi-blocks"> аппаратных блоков</ph> изделия должны
+            соответствовать значениям, указанным в таблице <xref
+                href="#construction-requirements/table_mass" format="dita"/>. Предельное отклонение
+            каждого габаритного размера от номинального значения не должно превышать 2 мм.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_mass" pgwide="1"
+            conkeyref="path-to-product/construction_table">
+            <tgroup cols="1">
+                <tbody>
+                    <row>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

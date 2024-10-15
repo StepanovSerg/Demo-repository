@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-construction" rev="1">
+    <title>Проверка требований к конструкции</title>
+    <body>
+        <p>Проверка проводится согласно п. 5.3 Программы и методики испытаний <ph
+                conkeyref="path-to-product/PCEH"/>ПМ.</p>
+    </body>
+</topic>

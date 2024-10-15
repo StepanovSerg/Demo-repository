@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="acceptance-certificate" rev="1">
+    <title>Свидетельство о приемке</title>
+    <body>
+        <div outputclass="two-columns">
+            <ph outputclass="column1">Наименование изделия:</ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/Product-1"/></b></ph><p/>
+            <ph outputclass="column1">Обозначение изделия: </ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/PCEH"/></b></ph><p/>
+            <ph outputclass="column1">Серийный (заводской) номер изделия:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+        </div>
+        <p/>
+        <p>Изделие соответствует действующим техническим условиям и признано годным для дальнейшей
+            эксплуатации.</p>
+        <div outputclass="two-columns">
+            <ph outputclass="column1">Личная подпись начальника ОТК:</ph>
+            <ph outputclass="column2">________________________________М.П.</ph>
+            <p/>
+            <ph outputclass="column1">Расшифровка подписи:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Дата (год, месяц, число):</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1"/>
+            <ph outputclass="column1">Личная подпись руководителя предприятия:</ph>
+            <ph outputclass="column2">________________________________М.П.</ph>
+            <p/>
+            <ph outputclass="column1">Расшифровка подписи:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Дата (год, месяц, число):</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Обозначение документа, по которому <b>      </b><b>  </b>
+                производится поставка:</ph>
+            <ph outputclass="column2"
+                        ><ph><b>                                                     </b></ph><b>
+                    <ph conkeyref="path-to-product/Techreq"/></b></ph>
+            <p/>
+            <p>_________________________________________________________________________________ </p>
+            <p/>
+            <p/>
+            <p/>
+            <ph outputclass="column1">Личная подпись представителя заказчика:</ph>
+            <ph outputclass="column2">________________________________М.П.</ph>
+            <p/>
+            <ph outputclass="column1">Расшифровка подписи:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Дата (год, месяц, число):</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+        </div>
+    </body>
+</topic>

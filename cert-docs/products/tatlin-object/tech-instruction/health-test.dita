@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="health-test" rev="1">
+    <title>Проверка работоспособности</title>
+    <body>
+        <p>Проверка работоспособности изделия производится согласно Руководству по эксплуатации <ph
+                conkeyref="path-to-product/PCEH"/>РЭ.</p>
+    </body>
+</topic>

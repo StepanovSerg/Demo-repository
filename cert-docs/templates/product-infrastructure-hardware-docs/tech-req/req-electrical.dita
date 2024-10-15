@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="electrical-requirements" rev="1">
+    <title>Требования к электрическим параметрам </title>
+    <body>
+        <p>Электропитание изделия должно осуществляться от трехпроводной однофазной электрической
+            сети с номинальным напряжением <ph conkeyref="path-to-product/NomVoltage"/>&#160;В,
+            соответствующей требованиям ГОСТ 29322. Допускается отклонение напряжения электропитания
+            от номинального в пределах ±10 %.</p>
+        <p>Ток потребления<ph props="multi-nodes"> каждого аппаратного блока</ph> изделия должен
+            составлять не более <ph conkeyref="path-to-product/Current"/> А.</p>
+    </body>
+</topic>

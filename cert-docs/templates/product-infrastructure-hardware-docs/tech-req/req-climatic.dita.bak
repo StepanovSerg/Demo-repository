@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="climatic-requirements" rev="1.0">
+    <title>Требования по стойкости к внешним воздействиям</title>
+    <body>
+        <p> Изделие должно сохранять работоспособное состояние: </p>
+        <ul id="ul_kk1_lry_vjb">
+            <li>при температуре окружающей среды от <ph conkeyref="path-to-product/Twork_min"
+                />&#160;°С до <ph conkeyref="path-to-product/Twork_max"/>&#160;°С;</li>
+            <li>при относительной влажности окружающей среды от <ph
+                    conkeyref="path-to-product/Nwork_min"/>&#160;% до <ph
+                    conkeyref="path-to-product/Nwork_max"/>&#160;%;</li>
+            <li>после транспортирования в условиях, приведенных в п. <xref
+                    href="../common/req-shipping.dita"/> настоящих ТУ.</li>
+        </ul>
+    </body>
+</topic>

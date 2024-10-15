@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-construction" rev="1">
+    <title>Проверка требований к конструкции</title>
+    <body>
+        <p>Измерение габаритных размеров производится с помощью рулетки измерительной. Погрешность
+            измерения не должна превышать установленной в ГОСТ 8.051-81. Измерение массы
+            производится путем взвешивания.</p>
+        <p>Результат проверки считается положительным, если габаритные размеры и масса <ph
+                props="multi-blocks">аппаратных блоков </ph>изделия соответствуют значениям,
+            приведенным в таблице <xref href="#test-construction/mass_table" format="dita"/>.
+            Предельное отклонение каждого габаритного размера от номинального значения не должно
+            превышать 2 мм.</p>
+        <table frame="all" rowsep="1" colsep="1" id="mass_table" pgwide="1"
+            conkeyref="path-to-product/construction_table">
+            <tgroup cols="1">
+                <tbody>
+                    <row>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

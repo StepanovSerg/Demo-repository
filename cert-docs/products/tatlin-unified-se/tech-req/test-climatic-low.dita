@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-climatic-low" rev="1">
+    <title>Проверка работоспособности в условиях пониженной температуры окружающей среды</title>
+    <body>
+        <p>Проверка проводится согласно п. 5.10 Программы и методики испытаний <ph
+                conkeyref="path-to-product/PCEH"/>ПМ.</p>
+    </body>
+</topic>

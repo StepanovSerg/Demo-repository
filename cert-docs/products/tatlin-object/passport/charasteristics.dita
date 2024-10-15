@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="characteristics" rev="1">
+    <title outputclass="page-break-before">Технические характеристики</title>
+    <body>
+        <p>Технические характеристики изделия приведены в таблице <xref
+                href="#characteristics/specs"/>.</p>
+        <table id="specs" pgwide="1" conkeyref="path-to-product/specs_table">
+            <tgroup cols="1">
+                <tbody>
+                    <row>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>Габаритные размеры и масса <ph props="multi-blocks">аппаратных блоков </ph>изделия
+            приведены в таблице <xref href="#characteristics/construct"/>.</p>
+        <table id="construct" pgwide="1" conkeyref="path-to-product/construction_table">
+            <tgroup cols="1">
+                <tbody>
+                    <row>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>

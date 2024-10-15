@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="security-requirements" rev="1">
+    <title>Требования безопасности</title>
+    <body>
+        <p>Изделие должно удовлетворять требованиям ГОСТ IEC 60950-1-2014 и ГОСТ IEC 62311-2013.</p>
+    </body>
+</topic>

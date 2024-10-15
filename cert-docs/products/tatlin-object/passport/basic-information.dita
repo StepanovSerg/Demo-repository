@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="basic-information" rev="1">
+    <title>Основные сведения </title>
+    <body>
+        <p/>
+        <div outputclass="two-columns">
+            <ph outputclass="column1">Наименование изделия:</ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/Product-1"/></b></ph><p/>
+            <ph outputclass="column1">Обозначение изделия:</ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/PCEH"/></b></ph><p/>
+            <ph outputclass="column1">Серийный (заводской) номер изделия:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Дата изготовления изделия:</ph>
+            <ph outputclass="column2"> ________________________________</ph>
+            <p/>
+            <ph outputclass="column1">Компания-производитель:</ph>
+            <ph outputclass="column2"><b props="KNS">ООО «КНС ГРУПП»</b>
+                <b props="YCS">ООО «Ядро Клиентские Системы»</b>
+                <b props="YCROH">ООО «Ядро Центр Разработки Объектных Хранилищ»</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b props="KNS">123376, г. Москва, ул. Рочдельская, д.&#160;15,
+                    стр.&#160;15, эт.&#160;4, пом.&#160;IV, ком.&#160;4</b>
+                <b props="YCS">123376, г. Москва, ул. Рочдельская, д.&#160;15, стр.&#160;15,
+                    эт.&#160;4, пом.&#160;IV, ч. ком.&#160;9</b>
+                <b props="YCROH">195027, г. Санкт-Петербург, Свердловская наб., д.&#160;44,
+                    литера&#160;Б, пом.&#160;1-Н, часть пом.&#160;31</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <p/>
+            <ph outputclass="column1">Завод-изготовитель:</ph>
+            <ph outputclass="column2"><b>ООО «ЯДРО ЛАБС»</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b>140030, Московская область</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b>рп. Малаховка, п. Овражки</b></ph>
+        </div>
+        <div outputclass="two-columns">
+            <ph outputclass="column1"/>
+            <ph outputclass="column2"><b>ул. Лесопитомник, д.&#160;10/1, эт.&#160;4,
+                    пом.&#160;17</b></ph>
+        </div>
+
+        <div outputclass="two-columns">
+            <p/>
+            <ph outputclass="column1">Изделие соответствует:</ph>
+            <ph outputclass="column2"><b><ph conkeyref="path-to-product/Techreq"/></b></ph>
+        </div>
+    </body>
+</topic>

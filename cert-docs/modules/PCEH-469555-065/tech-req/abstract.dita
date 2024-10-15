@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="module-abstract" rev="2">
+    <title/>
+    <body>
+        <p>Настоящие Технические условия (далее по тексту - ТУ) распространяются на <ph
+                conkeyref="path-to-product/Product-1"/> (далее по тексту - модуль). Модуль не имеет
+            самостоятельного применения и используется в составе <ph
+                conkeyref="path-to-product/Parent-devices"/> (далее по тексту - изделий).</p>
+        <p>Назначение модуля - <ph conkeyref="path-to-product/Function"/>
+            <ph conkeyref="path-to-product/Module-type"/>.</p>
+        <p>Пример записи модуля в других конструкторских документах: </p>
+        <p>«<ph conkeyref="path-to-product/Product"/>
+            <ph conkeyref="path-to-product/PCEH" outputclass="visible-data"/>».</p>
+        <p>Наименование модуля в документах на поставку или изготовление может содержать номер ТУ,
+            обозначение или артикул модуля, а также любые их комбинации.</p>
+    </body>
+</topic>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="rules-acceptance-tests" rev="1">
+    <title>Приемо-сдаточные испытания</title>
+    <body>
+        <p>Приемо-сдаточные испытания проводятся с целью проверки изделия на соответствие
+            требованиям настоящих ТУ для определения возможности приемки изделия. Испытания проводит
+            представитель ОТК завода-изготовителя.</p>
+        <p>Состав и последовательность приемо-сдаточных испытаний приведены в таблице <xref
+            href="#rules-acceptance-tests/table" format="dita"/>.</p>
+
+        <table frame="all" rowsep="1" colsep="1" id="table" pgwide="1">
+            <title>Состав и последовательность приемо-сдаточных испытаний </title>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="*"/>
+                <colspec colname="c2" colnum="2" colwidth="*" align="center"/>
+                <colspec colname="c3" colnum="3" colwidth="*" align="center"/>
+                <thead>
+                    <row>
+                        <entry align="left" morerows="1"><b>Наименование проверки</b></entry>
+                        <entry namest="c2" nameend="c3">Номер пункта ТУ</entry>
+                    </row>
+                    <row>
+                        <entry><b>Технические требования </b></entry>
+                        <entry>Методы контроля </entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>1. Проверка требований к упаковке</entry>
+                        <entry><xref href="req-packaging.dita"/></entry>
+                        <entry><xref href="test-packaging.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>2. Проверка требований к комплектности</entry>
+                        <entry><xref href="req-completeness.dita"/></entry>
+                        <entry><xref href="test-completeness.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>3. Проверка требований к конструкции</entry>
+                        <entry><xref href="req-construction.dita"/></entry>
+                        <entry><xref href="test-construction.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>4. Проверка технических характеристик</entry>
+                        <entry><xref href="req-characteristics.dita"/></entry>
+                        <entry><xref href="test-characteristics.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>5. Проверка требований к внешнему виду</entry>
+                        <entry><xref href="req-appearance.dita"/></entry>
+                        <entry><xref href="test-appearance.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>6. Проверка требований к маркировке</entry>
+                        <entry><xref href="req-marking.dita"/></entry>
+                        <entry><xref href="test-marking.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>7. Проверка работоспособности при номинальном напряжении
+                            электропитания</entry>
+                        <entry><xref href="req-electrical.dita"/></entry>
+                        <entry><xref href="test-electrical-nom-power.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>8. Проверка работоспособности при предельно допустимых напряжениях
+                            электропитания </entry>
+                        <entry><xref href="req-electrical.dita"/></entry>
+                        <entry><xref href="test-electrical-limit-power.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>9. Проверка тока потребления </entry>
+                        <entry><xref href="req-electrical.dita"/></entry>
+                        <entry><xref href="test-electrical-consumption.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>10. Проверка работоспособности в условиях пониженной температуры
+                            окружающей среды</entry>
+                        <entry><xref href="req-climatic.dita"/></entry>
+                        <entry><xref href="test-climatic-low.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>11. Проверка работоспособности в условиях повышенной температуры
+                            окружающей среды</entry>
+                        <entry><xref href="req-climatic.dita"/></entry>
+                        <entry><xref href="test-climatic-high.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>12. Проверка работоспособности после воздействия климатических
+                            условий транспортирования</entry>
+                        <entry><xref href="req-climatic.dita"/></entry>
+                        <entry><xref href="test-climatic-ship.dita"/></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+
+        <p>Результаты приемо-сдаточных испытаний заносятся в протокол приемо-сдаточных испытаний,
+            оформленный в соответствии с ГОСТ 15.309-98.</p>
+        <p>Не выдержавшие испытаний изделия возвращаются заводу-изготовителю на доработку с
+            изложением причин возврата. После устранения причин несоответствия требованиям ТУ
+            изделие может быть предъявлено на повторные испытания.</p>
+        <p>Изделие, не выдержавшее повторные приемно-сдаточные испытания, забраковывают и изолируют
+            от принятых или направленных на доработку или повторные испытания изделий.</p>
+        <p>Решение об использовании забракованного изделия в каждом конкретном случае принимает
+            представитель завода-изготовителя совместно с руководителем компании-производителя. При
+            положительных результатах повторных приемо-сдаточных испытаний изделие считают
+            выдержавшим испытания.</p>
+    </body>
+</topic>

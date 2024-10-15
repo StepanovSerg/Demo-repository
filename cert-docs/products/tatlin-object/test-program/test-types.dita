@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="test-types" rev="1">
+    <title>Виды испытаний</title>
+    <body>
+        <p>Изделие подвергают следующим видам испытаний:</p>
+        <ul>
+            <li>приемо-сдаточные.</li>
+            <li>периодические.</li>
+        </ul>
+    </body>
+</topic>

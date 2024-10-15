@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="hardware-characteristics" rev="1">
+    <title>Технические характеристики</title>
+    <body>
+        <p>Технические характеристики изделия должны соответствовать значениям, указанным в таблице
+                <xref href="#hardware-characteristics/table_specs" format="dita"/>.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_specs" pgwide="1"
+            conkeyref="path-to-product/specs_table">
+            <tgroup cols="1">
+                <tbody>
+                    <row>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </body>
+</topic>
